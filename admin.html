@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCStaffing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
+    <link rel="stylesheet" href="assets/css/ebs-contact-form.css">
+    
+    <link rel="stylesheet" href="assets/css/features-with-waves-effect.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  
+        <div class="navbar-container">
+        <nav class="navbar navbar-default navigation-clean" style="height:76px;">
+           
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" style="font-family:Bitter, serif;">Quality Controlled Staffing </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                       
+                        <li class="active" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" class="logOut data-toggle=&quot;modal&quot; data-target=&quot;#modal1&quot;" style="color:rgb(30,155,201);">Admin Login</a></li>
+                        <li role="presentation"><a href="clients.html" style="color:rgb(30,155,201);">Cllients </a></li>
+                        <li class="try" role="presentation"><a href="positions.html" style="color:rgb(30,155,201);">Open positions</a></li>
+                       
+                    </ul>
+                </div>
+            
+        </nav>
+    
+    </div>
+    <div>
+        <div class="container-fluid">
+            <div class="row add-job-input text-center">
+                <div class="col-md-4">
+                    <h4>Add job title</h4>
+                    <input id= "positionTitle" class="add-job"></input>
+                </div>
+                <div class="col-md-4">
+                    <h4>Add job details</h4>
+                    <textarea id="positionDetails" class="add-job"></textarea>
+                </div>
+                <div class="col-md-4 admin-buttons">
+                    <button class="btn btn-info" id="post" type="button">Post Job</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+                    <!-- Modal --> 
+   <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <p class="text-center"><i class="ion-ios-locked-outline"></i></p>
+                    </div>
+                            <form>
+                       
+                    <div class="modal-body">
+                        
+                        <input type="email" required="" placeholder="Email" id="txtEmail" style="">
+                        <input type="password" placeholder="Password" id="txtPassword" ">
+                    </div>
+                        </form>
+                    <div class="modal-bottom text-center">
+                       <!--  <button class="btn btn-default" type="button" data-dismiss="modal">Close</button> -->
+                        <button class="btn btn-success" type="button" id="btnLogin">Login </button>
+                        
+                        <p class="pwdIncorrect">Incorrect Username/Password</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12 text-center posted-jobs-heading">
+                 
+                   <h1 id="high">Jobs that have been posted are below</h1>
+                </div>
+            </div> 
+
+        <div class="container-fluid jobAppend">         
+                
+            </div>
+        
+        <a href='index.html' class="btn btn-default navbar-btn" type="button" id="btnLogout">Loggout</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/Animated-Type-Heading.js"></script>
+    <script src="assets/js/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

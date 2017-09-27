@@ -1,0 +1,84 @@
+.highlight-phone {
+  color:#313437;
+  background-color:#ffffff;
+  padding:50px 0 55px;
+  overflow:hidden;
+  border-top:1px soild lightgrey;
+}
+
+@media (max-width:767px) {
+  .highlight-phone {
+    text-align:center;
+  }
+}
+
+.highlight-phone p {
+  color:#7d8285;
+}
+
+.highlight-phone h2 {
+  font-weight:bold;
+  margin-bottom:35px;
+  line-height:1.5;
+  padding-top:0;
+  margin-top:0;
+  color:inherit;
+}
+
+.highlight-phone .intro {
+  font-size:18px;
+  max-width:500px;
+  line-height:1.5;
+}
+
+@media (max-width:767px) {
+  .highlight-phone .intro {
+    max-width:none;
+  }
+}
+
+.highlight-phone .intro p {
+  margin-bottom:35px;
+}
+
+.highlight-phone .intro .btn {
+  padding:16px 32px;
+  border:none;
+  background:none;
+  box-shadow:none;
+  text-shadow:none;
+  opacity:0.9;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:13px;
+  letter-spacing:0.4px;
+  line-height:1;
+}
+
+.highlight-phone .intro .btn:hover {
+  opacity:1;
+}
+
+.highlight-phone .intro .btn-primary {
+  background-color:#2fafd9;
+  color:#fff;
+}
+
+.highlight-phone .iphone-mockup {
+  position:relative;
+  margin-bottom:-230px;
+}
+
+.highlight-phone .iphone-mockup img.device {
+  width:100%;
+  height:auto;
+}
+
+.highlight-phone.bottom-article {
+  background-color:rgb(238,244,247);
+}
+
+.highlight-phone.top-highlight {
+  border-top:1px solid rgb(68,183,220);
+}
+
