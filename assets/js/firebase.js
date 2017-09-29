@@ -103,11 +103,11 @@ $(document).ready(function() {
 
                 "<div class='row add-job-input posted text-center'>" +
                 "<div class='col-md-4'>" +
-                "<h4>Title</h4>" +
-                "<p class='job-title'>" + posts.title + "</p>" +
+                "<h4 class='titleHeader'>Title</h4>" +
+                "<p class='titleHeader'>" + posts.title + "</p>" +
                 "</div>" +
                 "<div class='col-md-4 text-center'>" +
-                "<h4 class=''>details</h4>" +
+                "<h4 class='detailsHeader'>details</h4>" +
                 "<p class='job-details text-center'>" + posts.details + "</p>" +
                 "</div>" +
 
