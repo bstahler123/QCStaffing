@@ -173,7 +173,14 @@ padding: 20px;
   margin-top: 10px;
 }
 
+.maps { 
+background-color: rgb(63,180,208);
 
+ }
+.maps > h2 {
+  color: white;
+
+}
 
 
 
