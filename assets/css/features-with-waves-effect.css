@@ -121,7 +121,7 @@
   font-size:18px;
   font-weight:300;
   font-family:'Roboto';
-  padding: 15px;
+ 
 
 }
 
@@ -140,6 +140,12 @@
   font-family:'Roboto';
   padding-bottom: 10px;
 
+}
+
+@media (min-width:776px) {
+  .paragraf-fitur {
+    padding: 0px;
+  }
 }
 
 
