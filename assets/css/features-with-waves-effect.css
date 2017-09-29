@@ -79,9 +79,17 @@
 .kolom-a:hover {
   background:rgba( 0, 0, 0, 0.5);
   border-radius:4px;
-  transition:0.2s;
- 
+  transition:0.2s; 
 }
+
+.kolom-a:hover .paragraf-fitur {
+  transition:0.2s;
+  color: white;
+}
+
+
+
+
 
 .kolom-a {
   padding:25px;
