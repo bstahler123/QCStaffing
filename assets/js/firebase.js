@@ -121,18 +121,18 @@ $(document).ready(function() {
             // posting to the positions avalible page
 
             $(".avalibleJobs").append(
-                "<div class='col-md-6 col-sm-6 waves-effect kolom-a'>" +
+                "<div class='col-md-6 col-sm-6 waves-effect kolom-a colPositions'>" +
                 "<div class='fitur-a'></div>" +
 
-                "<h4 class='heading-fitur text-center'>" + posts.title + "</h4>" +
-                "<div class='separator-fitur'></div>" +
+                "<h4 class='postHeading text-center'>" + posts.title + "</h4>" +
+                "<div class='seperator'></div>" +
                 "<div>" +
                 "<div class'paragraph1'>" +
                 " <p class='paragraf-fitur text-center'> " + posts.details + " </p>" +
                 "</div>" +
                 "</div>" +
                 "<div class='text-center'>" +
-                "<button class='btn btn-info'>Apply Now</button>" +
+                "<button class='btn btn-info apply'>Apply Now</button>" +
                 "</div>" +
                 "</div>"
             );
