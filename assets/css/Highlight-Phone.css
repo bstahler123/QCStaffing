@@ -29,6 +29,7 @@
   font-size:18px;
   max-width:500px;
   line-height:1.5;
+  color: rgb(63,180,208);
 }
 
 @media (max-width:767px) {

@@ -177,6 +177,7 @@ padding: 20px;
 
 .maps { 
 background-color: rgb(63,180,208);
+margin-bottom: 0px;
 
  }
 .maps > h2,p {
@@ -208,6 +209,38 @@ background-color: rgb(63,180,208);
 
 .black {
   color: black;
+}
+
+.apply {
+  border-radius:0;
+  width:30%;
+  height:40px;
+  font-size:1em;
+  background:#00aeef;
+  color: white;
+}
+.positionsBanner {
+  
+  background-color: #e8f4f9;
+  padding: 20px 0px 10px 0px;
+  font-size: 36px;
+
+
+
+  font-weight: bold;
+
+
+
+}
+
+.positionsBanner > h4 {
+  font-size: 36px;
+
+  
+  color: rgb(63,180,208);
+}
+.noMargin{
+ 
 }
 
 

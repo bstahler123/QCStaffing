@@ -84,23 +84,15 @@
   transition:0.2s; 
 }
 .colPositions:hover {
-  background:rgba(0,0,0, .5);
+  border: 1px solid black;
   border-radius:4px;
   transition:0.2s; 
 }
+.colPositions{
+  height: 400px;
+}
 
-.colPositions:hover .paragraf-fitur {
-  transition:0.2s;
-  color: white;
-}
-.colPositions:hover .postHeading {
-  transition:0.2s;
-  color: white;
-}
-.colPositions:hover .separator-fitur {
-  transition:0.2s;
-  background-color: white;
-}
+
 
 .kolom-a {
   padding:25px;
@@ -115,6 +107,7 @@
 }
 .apply {
   font-size: 18px;
+  margin-top: 40px;
 }
 
 .paragraf-fitur {
