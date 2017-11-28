@@ -270,11 +270,26 @@ margin-bottom: 0px;
  }
  .disclaimer > p{
   color: black;
+  font-size: 10px;
  }
 
  .agree {
   margin-left: 45%;
  }
+
+ @media only screen and (max-width: 500px) {
+    
+      .application{ 
+  
+  
+  padding: 10px;
+
+ } 
+        
+    }
+}
+
+
 
 
 
