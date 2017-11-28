@@ -49,19 +49,19 @@
             <div class="row app-row">
                 <div class="col-sm-4">
                     <label>First Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-4">
                     <label>Last Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-2">
                     <label>M.I.</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-2">
                     <label>Date</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" >
                 </div>
             </div>
             <!-- Second Row -->
@@ -127,56 +127,65 @@
             <div class="row app-row bottom-history">
                 <div class="col-sm-6">
                     <label>Are you a citizen of the United States?</label>
+                    <fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                            <input type="radio" name="options" id="option1" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
                             <input type="radio" name="options" id="option2">No
                         </label>
                     </div>
+                </fieldset>
                 </div>
                 <div class="col-sm-6">
                     <label>If no are you authorized to work in the United States?</label>
-                    <div class="btn-group" data-toggle="buttons">
+                    <fieldset>
+                    <div  class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                            <input type="radio" name="options1" id="option3" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option2">No
+                            <input type="radio" name="options1" id="option4">No
                         </label>
                     </div>
+                </fieldset>
                 </div>
             </div>
             <!--  Eight row -->
             <div class="row app-row bottom-history">
                 <div class="col-sm-6">
                     <label>Have you ever worked for this company?</label>
+                    <fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                            <input type="radio" name="options2" id="option5" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option2">No
+                            <input type="radio" name="options2" id="option6">No
                         </label>
                     </div>
-                </div>
+                </fieldset>
+            </div>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" placeholder="If yes enter start and end dates that you worked for this company">
+                    <label>If yes enter start and end dates that you worked for this company</label>
+                    <input type="text" class="form-control">
                 </div>
             </div>
             <!-- ninth row -->
             <div class="row app-row bottom-history">
                 <div class="col-sm-12">
                     <label>Do you have a valid drivers license?</label>
+                    <fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                            <input type="radio" name="options3" id="option7" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option2">No
+                            <input type="radio" name="options3" id="option8">No
                         </label>
                     </div>
+                </fieldset>
                 </div>
             </div>
 
@@ -244,14 +253,16 @@
             <div class="row app-row bottom-history">
                 <div class="col-sm-12">
                     <label>May we contact your previous supervisor as a reference?</label>
+                    <fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                            <input type="radio" name="options4" id="option9" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option2">No
+                            <input type="radio" name="options4" id="option10">No
                         </label>
                     </div>
+                </fieldset>
                 </div>
             </div>
             <!-- second employer row -->
@@ -310,14 +321,16 @@
             <div class="row app-row">
                 <div class="col-sm-12 bottom-history">
                     <label>May we contact your previous supervisor as a reference?</label>
+                    <fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                            <input type="radio" name="options5" id="option11" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option2" required>No
+                            <input type="radio" name="options5" id="option12">No
                         </label>
                     </div>
+                </fieldset>
                 </div>
             </div>
             <!-- third employer row -->
@@ -376,14 +389,16 @@
             <div class="row app-row">
                 <div class="col-sm-12 bottom-history">
                     <label>May we contact your previous supervisor as a reference?</label>
+                    <<fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                            <input type="radio" name="options6" id="option13" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option2">No
+                            <input type="radio" name="options6" id="option14">No
                         </label>
                     </div>
+                </fieldset>
                 </div>
             </div>
 
@@ -418,14 +433,16 @@
             </div>
              <div class="row app-row">
                 <label>Did you graduate?</label>
-                 <div class="btn-group" data-toggle="buttons">
+                 <fieldset>
+                    <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                            <input type="radio" name="options7" id="option15" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option2">No
+                            <input type="radio" name="options7" id="option16">No
                         </label>
                     </div>
+                </fieldset>
              </div>
 
                   <!--   College Eduaction -->
@@ -459,14 +476,16 @@
             </div>
              <div class="row app-row">
                 <label>Did you graduate?</label>
-                 <div class="btn-group" data-toggle="buttons">
+                 <fieldset>
+                    <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                            <input type="radio" name="options8" id="option17" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option2">No
+                            <input type="radio" name="options8" id="option18">No
                         </label>
                     </div>
+                </fieldset>
              </div>
 
            <!--   Other Education -->
@@ -499,14 +518,16 @@
             </div>
              <div class="row app-row bottom-history">
                 <label>Did you graduate?</label>
-                 <div class="btn-group" data-toggle="buttons">
+                 <fieldset>
+                    <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                            <input type="radio" name="options9" id="option19" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option2">No
+                            <input type="radio" name="options9" id="option20">No
                         </label>
                     </div>
+                </fieldset>
              </div>
 
              <!-- References -->
@@ -606,25 +627,15 @@
                         If this application leads to employment, I understand that false or misleading information in my application or interview may result in my release. <p>
 
                         <label class="btn btn-default agree">
-                            <input type="radio" name="options" id="option1" autocomplete="off">  I Agree
+                            <input type="radio" name="options10" id="option21" autocomplete="off" required="">  I Agree
                         </label>
+                        <input class="btn btn-primary" type="submit" name="">
                     
                 </div>
                 
             </div>
-                    
-
-
 
             
-            
-
-
-
-
-
-
-            <input class="btn btn-primary" type="submit" name="">
         </form>
     </div>
     <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
