@@ -132,8 +132,8 @@ $(document).ready(function() {
                 "</div>" +
                 "</div>" +
                 "<div class='text-center'>" +
-                "<button class='btn btn-info apply'>Apply Now</button>" +
-                "</div>" +
+                "<a <button href='application.html' class='btn btn-info apply'>Apply Now</button>" +
+                "</div></a>" +
                 "</div>"
             );
 

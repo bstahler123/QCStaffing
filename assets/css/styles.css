@@ -243,6 +243,39 @@ margin-bottom: 0px;
  
 }
 
+.application{ 
+  
+  
+  padding: 50px;
+
+ } 
+ .app-row {
+  margin-top: 5px;
+ }
+
+ .application-header{
+  margin-bottom: 50px;
+
+ }
+
+ .bottom-history {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+ }
+
+ .disclaimer {
+  padding:10px;
+  border:1px solid black;
+  background-color: lightgrey;
+ }
+ .disclaimer > p{
+  color: black;
+ }
+
+ .agree {
+  margin-left: 45%;
+ }
+
 
 
 

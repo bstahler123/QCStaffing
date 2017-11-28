@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCStaffing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
+    <link rel="stylesheet" href="assets/css/ebs-contact-form.css">
+    <link rel="stylesheet" href="assets/css/features-with-waves-effect.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="navbar-container">
+        <nav class="navbar navbar-default navigation-clean" style="height:76px;">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" style="font-family:Bitter, serif;">Quality Controlled Staffing </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="admin.html">
+                        <li class="btn btn-success btnAddPosition">Add/Delete positions</li>
+                    </a>
+                    <li class="active" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" class="data-toggle=&quot;modal&quot; data-target=&quot;#modal1&quot;" style="color:rgb(30,155,201);">Admin Login</a></li>
+                    <li role="presentation"><a href="clients.html" style="color:rgb(30,155,201);">Clients </a></li>
+                    <li class="try" role="presentation"><a href="positions.html" style="color:rgb(30,155,201);">Open positions</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <!-- Application starts here -->
+        <form class="application">
+            <h2 class="text-center application-header">Applicant Information</h2>
+            <!-- First Row -->
+            <div class="row app-row">
+                <div class="col-sm-4">
+                    <label>First Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-2">
+                    <label>M.I.</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-2">
+                    <label>Date</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row app-row">
+                <div class="col-sm-8">
+                    <label>Street Address</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Apartment/Unit #</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- Third Row -->
+            <div class="row app-row">
+                <div class="col-sm-4">
+                    <label>City</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>State</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Zip</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- Fourth row -->
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Email Address</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- Fifth row -->
+            <div class="row app-row">
+                <div class="col-sm-4">
+                    <label>Date Available</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Social Sercurity No.</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Desired Salary</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- sixth row -->
+            <div class="row app-row">
+                <div class="col-sm-12">
+                    <label>Position applying for/Type of position</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- seventh row -->
+            <div class="row app-row bottom-history">
+                <div class="col-sm-6">
+                    <label>Are you a citizen of the United States?</label>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2">No
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label>If no are you authorized to work in the United States?</label>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2">No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!--  Eight row -->
+            <div class="row app-row bottom-history">
+                <div class="col-sm-6">
+                    <label>Have you ever worked for this company?</label>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2">No
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" placeholder="If yes enter start and end dates that you worked for this company">
+                </div>
+            </div>
+            <!-- ninth row -->
+            <div class="row app-row bottom-history">
+                <div class="col-sm-12">
+                    <label>Do you have a valid drivers license?</label>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2">No
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Previous employment -->
+
+
+
+            <h2 class="text-center application-header">Previous Employment</h2>
+            <!-- first row -->
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Company</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- second row -->
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Address</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Supervisor</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- third row -->
+            <div class="row app-row">
+                <div class="col-sm-4">
+                    <label>Job Title</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Starting Salary</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Ending Salary</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- fourth row -->
+            <div class="row app-row">
+                <div class="col-sm-3">
+                    <label>From</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                    <label>To</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Reason for leaving</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- fifth row -->
+            <div class="row app-row bottom-history">
+                <div class="col-sm-12">
+                    <label>May we contact your previous supervisor as a reference?</label>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2">No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- second employer row -->
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Company</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- second row -->
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Address</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Supervisor</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- third row -->
+            <div class="row app-row">
+                <div class="col-sm-4">
+                    <label>Job Title</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Starting Salary</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Ending Salary</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- fourth row -->
+            <div class="row app-row">
+                <div class="col-sm-3">
+                    <label>From</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                    <label>To</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Reason for leaving</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- fifth row -->
+            <div class="row app-row">
+                <div class="col-sm-12 bottom-history">
+                    <label>May we contact your previous supervisor as a reference?</label>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" required>No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- third employer row -->
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Company</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- second row -->
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Address</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Supervisor</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- third row -->
+            <div class="row app-row">
+                <div class="col-sm-4">
+                    <label>Job Title</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Starting Salary</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>Ending Salary</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- fourth row -->
+            <div class="row app-row">
+                <div class="col-sm-3">
+                    <label>From</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                    <label>To</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Reason for leaving</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <!-- fifth row -->
+            <div class="row app-row">
+                <div class="col-sm-12 bottom-history">
+                    <label>May we contact your previous supervisor as a reference?</label>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2">No
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+                        <!-- Eduaction -->
+
+            <div class="row app-row">
+                <h2 class="text-center application-header">Education</h2>
+                <div class="col-sm-6">
+                    <label>High School</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Address</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row app-row">
+                <div class="col-sm-4">
+                    <label>From</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>To</label>
+                    <input type="text" class="form-control">
+                </div>
+           
+                <div class="col-sm-4">
+                    <label>Degree</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+             <div class="row app-row">
+                <label>Did you graduate?</label>
+                 <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2">No
+                        </label>
+                    </div>
+             </div>
+
+                  <!--   College Eduaction -->
+
+
+             <div class="row app-row">
+                
+                <div class="col-sm-6">
+                    <label>College</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Address</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row app-row">
+                <div class="col-sm-4">
+                    <label>From</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>To</label>
+                    <input type="text" class="form-control">
+                </div>
+           
+                <div class="col-sm-4">
+                    <label>Degree</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+             <div class="row app-row">
+                <label>Did you graduate?</label>
+                 <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2">No
+                        </label>
+                    </div>
+             </div>
+
+           <!--   Other Education -->
+
+             <div class="row app-row">
+                
+                <div class="col-sm-6">
+                    <label>Other</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Address</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row app-row">
+                <div class="col-sm-4">
+                    <label>From</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label>To</label>
+                    <input type="text" class="form-control">
+                </div>
+           
+                <div class="col-sm-4">
+                    <label>Degree / Certificate</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+             <div class="row app-row bottom-history">
+                <label>Did you graduate?</label>
+                 <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1" autocomplete="off">Yes
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2">No
+                        </label>
+                    </div>
+             </div>
+
+             <!-- References -->
+             <h2 class="text-center application-header">References</h2>
+
+             <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Relationship</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Company</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row app-row bottom-history">
+                <div class="col-sm-12">
+                    <label>Adress</label>
+                    <input type="text" class="form-control">
+                </div>
+                
+            </div>
+
+
+            <!-- second reference -->
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Relationship</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Company</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row app-row bottom-history">
+                <div class="col-sm-12">
+                    <label>Adress</label>
+                    <input type="text" class="form-control">
+                </div>
+                
+            </div>
+
+          <!--   third refernce -->
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Relationship</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row app-row">
+                <div class="col-sm-6">
+                    <label>Company</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row app-row">
+                <div class="col-sm-12">
+                    <label>Adress</label>
+                    <input type="text" class="form-control">
+                </div>
+                
+            </div>
+            <div class="row app-row">
+                <div class="col-sm-12 disclaimer">
+                    <p>I certify that my answers are true to the best of my knowledge.<br><br> I understand and agree that nothing contained in this employment application or in the granting of an interview creates an employment contract between Quaility Controlled Staffing Inc. and myself either employment or the providing of any benefit. If and eployment relationship is established, I understand that my employment will be terminable "at will," that I will have the right to terminate my employment at anytime, and that Quality Controlled Staffing Inc. will retain a similar right to terminate my employment at anytime.<br><br> No guarantee of employment for length of duration is made through this application process, it being expressly understood that any employment here is as a temporary employee assignable to companies as contract temporary employee.<br><br>
+                        I authorize this company, and authorize each request from formeremployer and person, firm or corporation give as reference to answer all questions that may be asked, and to give all information that may be asked, If i request I will consent to a drug and or alcohol test.<br><br> As an employee of Quality Controlled Staffing Inc. I hereby acknowledge and pledge to Quality Controlled Staffing Inc. that i will comply with all provisions relating to nondisclosure or use of any secret, confidential or proprietary information and know-how of Quality Controlled Staffing Incs's client compaines.<br> <br>
+                        I Certify that the answers on the application are true and correct, I understand that if any of the answers are found to be wrong or incorrect, I could be subject to immediate dismissal. <br><br>
+                        If this application leads to employment, I understand that false or misleading information in my application or interview may result in my release. <p>
+
+                        <label class="btn btn-default agree">
+                            <input type="radio" name="options" id="option1" autocomplete="off">  I Agree
+                        </label>
+                    
+                </div>
+                
+            </div>
+                    
+
+
+
+            
+            
+
+
+
+
+
+
+            <input class="btn btn-primary" type="submit" name="">
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/Animated-Type-Heading.js"></script>
+    <script src="assets/js/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

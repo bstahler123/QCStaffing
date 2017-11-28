@@ -84,7 +84,7 @@
   transition:0.2s; 
 }
 .colPositions:hover {
-  border: 1px solid black;
+  border: 1px  solid #0fb2ef;
   border-radius:4px;
   transition:0.2s; 
 }
@@ -140,6 +140,12 @@
 @media (max-width:776px) {
   .paragraf-fitur {
     padding: 0px;
+  }
+  .colPositions {
+    height: auto;
+  }
+  .apply {
+    margin: 20px;
   }
 }
 
