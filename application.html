@@ -25,50 +25,58 @@
 
 <body>
     <div class="navbar-container">
-        <nav class="navbar navbar-default navigation-clean" style="height:76px;">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" style="font-family:Bitter, serif;">Quality Controlled Staffing </a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            </div>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <a href="admin.html">
-                        <li class="btn btn-success btnAddPosition">Add/Delete positions</li>
-                    </a>
-                    <li class="active" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" class="data-toggle=&quot;modal&quot; data-target=&quot;#modal1&quot;" style="color:rgb(30,155,201);">Admin Login</a></li>
-                    <li role="presentation"><a href="clients.html" style="color:rgb(30,155,201);">Clients </a></li>
-                    <li class="try" role="presentation"><a href="positions.html" style="color:rgb(30,155,201);">Open positions</a></li>
-                </ul>
-            </div>
+        <nav class="navbar navbar-default navigation-clean">
+           
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" style="font-family:Bitter, serif;">Quality Controlled Staffing </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                       <li class="addPosition" role="presentation"><a href="admin.html" style="color:rgb(30,155,201);">Add/Remove Positions</a></li>
+                        
+                        <li class="active" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" class="data-toggle=&quot;modal&quot; data-target=&quot;#modal1&quot;" style="color:rgb(30,155,201);">Admin Login</a></li>
+                        <li role="presentation"><a href="clients.html" style="color:rgb(30,155,201);">Clients </a></li>
+                        <li class="try" role="presentation"><a href="positions.html" style="color:rgb(30,155,201);">Open positions</a></li>
+                        <li class="printUsers" role="presentation"><a href="printapps.html" style="color:rgb(30,155,201);">Print Applications</a></li>
+                       
+                    </ul>
+                </div>
+            
         </nav>
     </div>
+ 
     <div class="container-fluid">
         <!-- Application starts here -->
         <form id="test">
             <h2 class="text-center application-header">Applicant Information</h2>
+            <label class = 'required'> * Required fields </label>
             <!-- First Row -->
             <div class="row app-row">
+                
                 <div class="col-sm-4">
-                    <label>First Name</label>
-                    <input id="firstName" type="text" class="form-control" >
+
+                    <label>First Name *</label>
+                    <input id="firstName" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-4">
-                    <label>Last Name</label>
-                    <input id="lastName" type="text" class="form-control">
+                    <label>Last Name *</label>
+                    <input id="lastName" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-2">
-                    <label>M.I.</label>
-                    <input id="mi" type="text" class="form-control" >
+                    <label>M.I. *</label>
+                    <input id="mi" type="text" class="form-control"  required="">
                 </div>
                 <div class="col-sm-2">
-                    <label>Date</label>
-                    <input id="date" type="text" class="form-control" >
+                    <label>Date *</label>
+                    <input id="date" type="text" class="form-control" required="">
                 </div>
             </div>
             <!-- Second Row -->
             <div class="row app-row">
                 <div class="col-sm-8">
-                    <label>Street Address</label>
-                    <input id="streetAddress" type="text" class="form-control">
+                    <label>Street Address *</label>
+                    <input id="streetAddress" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-4">
                     <label>Apartment/Unit #</label>
@@ -78,42 +86,42 @@
             <!-- Third Row -->
             <div class="row app-row">
                 <div class="col-sm-4">
-                    <label>City</label>
-                    <input id="city" type="text" class="form-control">
+                    <label>City *</label>
+                    <input id="city" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-4">
-                    <label>State</label>
-                    <input id="state" type="text" class="form-control">
+                    <label>State *</label>
+                    <input id="state" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-4">
-                    <label>Zip</label>
-                    <input id="zip" type="text" class="form-control">
+                    <label>Zip *</label>
+                    <input id="zip" type="text" class="form-control" required="">
                 </div>
             </div>
             <!-- Fourth row -->
             <div class="row app-row">
                 <div class="col-sm-6">
-                    <label>Phone Number</label>
-                    <input id="phoneNumber" type="text" class="form-control">
+                    <label>Phone Number *</label>
+                    <input id="phoneNumber" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Email Address</label>
-                    <input id="emailAddress" type="text" class="form-control">
+                    <label>Email Address *</label>
+                    <input id="emailAddress" type="text" class="form-control" required="">
                 </div>
             </div>
             <!-- Fifth row -->
             <div class="row app-row">
                 <div class="col-sm-4">
-                    <label>Date Available</label>
-                    <input id="dateAvailable" type="text" class="form-control">
+                    <label>Date Available *</label>
+                    <input id="dateAvailable" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-4">
                     <label>Social Sercurity No.</label>
                     <input id="ssNumber" type="text" class="form-control">
                 </div>
                 <div class="col-sm-4">
-                    <label>Desired Salary</label>
-                    <input id="desiredSalary" type="text" class="form-control">
+                    <label>Desired Salary *</label>
+                    <input id="desiredSalary" type="text" class="form-control" required="">
                 </div>
             </div>
 
@@ -121,8 +129,8 @@
             <!-- sixth row -->
             <div class="row app-row">
                 <div class="col-sm-12">
-                    <label>Position applying for/Type of position</label>
-                    <input id="positionApplying" type="text" class="form-control">
+                    <label>Position applying for/Type of position *</label>
+                    <input id="positionApplying" type="text" class="form-control" required="">
                 </div>
             </div>
 
@@ -131,11 +139,11 @@
             <!-- seventh row -->
             <div class="row app-row bottom-history">
                 <div class="col-sm-6">
-                    <label>Are you a citizen of the United States?</label>
+                    <label>Are you a citizen of the United States? *</label>
                     <fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options" id="option1" value="Yes" autocomplete="off">Yes
+                            <input type="radio" name="options" id="option1" value="Yes" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
                             <input type="radio" name="options" id="option2" value="no">No
@@ -144,11 +152,11 @@
                 </fieldset>
                 </div>
                 <div class="col-sm-6">
-                    <label>If no are you authorized to work in the United States?</label>
+                    <label>If no are you authorized to work in the United States? *</label>
                     <fieldset>
                     <div  class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options1" id="option3" value="Yes" autocomplete="off">Yes
+                            <input type="radio" name="options1" id="option3" value="Yes" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
                             <input type="radio" name="options1" id="option4" value="no">No
@@ -160,11 +168,11 @@
             <!--  Eight row -->
             <div class="row app-row bottom-history">
                 <div class="col-sm-6">
-                    <label>Have you ever worked for this company?</label>
+                    <label>Have you ever worked for this company? *</label>
                     <fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options2" id="option5" value="Yes" autocomplete="off">Yes
+                            <input type="radio" name="options2" id="option5" value="Yes" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
                             <input type="radio" name="options2" id="option6" value="no">No
@@ -180,11 +188,11 @@
             <!-- ninth row -->
             <div class="row app-row bottom-history">
                 <div class="col-sm-12">
-                    <label>Do you have a valid drivers license?</label>
+                    <label>Do you have a valid drivers license? *</label>
                     <fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options3" id="option7" value="Yes" autocomplete="off">Yes
+                            <input type="radio" name="options3" id="option7" value="Yes" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
                             <input type="radio" name="options3" id="option8" value="no">No
@@ -205,63 +213,63 @@
             <!-- first row -->
             <div class="row app-row">
                 <div class="col-sm-6">
-                    <label>Company</label>
-                    <input id="job1" type="text" class="form-control">
+                    <label>Company *</label>
+                    <input id="job1" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Phone Number</label>
-                    <input id="job1Number" type="text" class="form-control">
+                    <label>Phone Number *</label>
+                    <input id="job1Number" type="text" class="form-control" required="">
                 </div>
             </div>
             <!-- second row -->
             <div class="row app-row">
                 <div class="col-sm-6">
-                    <label>Address</label>
-                    <input id="job1Address" type="text" class="form-control">
+                    <label>Address *</label>
+                    <input id="job1Address" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Supervisor</label>
-                    <input id="job1Supervisor" type="text" class="form-control">
+                    <label>Supervisor *</label>
+                    <input id="job1Supervisor" type="text" class="form-control" required="">
                 </div>
             </div>
             <!-- third row -->
             <div class="row app-row">
                 <div class="col-sm-4">
-                    <label>Job Title</label>
-                    <input id="job1Title" type="text" class="form-control">
+                    <label>Job Title *</label>
+                    <input id="job1Title" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-4">
-                    <label>Starting Salary</label>
-                    <input id="job1StartingSalary" type="text" class="form-control">
+                    <label>Starting Salary *</label>
+                    <input id="job1StartingSalary" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-4">
-                    <label>Ending Salary</label>
-                    <input id="job1EndingSalary" type="text" class="form-control">
+                    <label>Ending Salary *</label>
+                    <input id="job1EndingSalary" type="text" class="form-control" required="">
                 </div>
             </div>
             <!-- fourth row -->
             <div class="row app-row">
                 <div class="col-sm-3">
-                    <label>From</label>
-                    <input id="job1Start" type="text" class="form-control">
+                    <label>From *</label>
+                    <input id="job1Start" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-3">
-                    <label>To</label>
-                    <input id="job1End" type="text" class="form-control">
+                    <label>To *</label>
+                    <input id="job1End" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Reason for leaving</label>
-                    <input id="job1Reason" type="text" class="form-control">
+                    <label>Reason for leaving *</label>
+                    <input id="job1Reason" type="text" class="form-control" required="">
                 </div>
             </div>
             <!-- fifth row -->
             <div class="row app-row bottom-history">
                 <div class="col-sm-12">
-                    <label>May we contact your previous supervisor as a reference?</label>
+                    <label>May we contact your previous supervisor as a reference? *</label>
                     <fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options4" id="option9" value="Yes" autocomplete="off">Yes
+                            <input type="radio" name="options4" id="option9" value="Yes" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
                             <input type="radio" name="options4" id="option10" value="no">No
@@ -413,36 +421,36 @@
             <div class="row app-row">
                 <h2 class="text-center application-header">Education</h2>
                 <div class="col-sm-6">
-                    <label>High School</label>
-                    <input id="highSchool" type="text" class="form-control">
+                    <label>High School *</label>
+                    <input id="highSchool" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Address</label>
-                    <input id="highSchoolAddress" type="text" class="form-control">
+                    <label>Address *</label>
+                    <input id="highSchoolAddress" type="text" class="form-control" required="">
                 </div>
             </div>
             <div class="row app-row">
                 <div class="col-sm-4">
-                    <label>From</label>
-                    <input id="highFrom" type="text" class="form-control">
+                    <label>From *</label>
+                    <input id="highFrom" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-4">
-                    <label>To</label>
-                    <input id="highTo" type="text" class="form-control">
+                    <label>To *</label>
+                    <input id="highTo" type="text" class="form-control" required="">
                 </div>
            
                 <div class="col-sm-4">
-                    <label>Degree</label>
-                    <input id="highDegree" type="text" class="form-control">
+                    <label>Degree *</label>
+                    <input id="highDegree" type="text" class="form-control" required="">
                 </div>
             </div>
              <div class="row app-row bottom-history">
                 <div class="col-sm-12">
-                <label>Did you graduate?</label>
+                <label>Did you graduate? *</label>
                  <fieldset>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
-                            <input type="radio" name="options7" id="option15" value="Yes" autocomplete="off">Yes
+                            <input type="radio" name="options7" id="option15" value="Yes" autocomplete="off" required="">Yes
                         </label>
                         <label class="btn btn-default">
                             <input type="radio" name="options7" id="option16" value="no">No
@@ -546,28 +554,28 @@
 
              <div class="row app-row">
                 <div class="col-sm-6">
-                    <label>Full Name</label>
-                    <input id="ref1" type="text" class="form-control">
+                    <label>Full Name *</label>
+                    <input id="ref1" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Relationship</label>
-                    <input id="ref1Rel" type="text" class="form-control">
+                    <label>Relationship *</label>
+                    <input id="ref1Rel" type="text" class="form-control" required="">
                 </div>
             </div>
             <div class="row app-row">
                 <div class="col-sm-6">
-                    <label>Company</label>
-                    <input id="ref1Company" type="text" class="form-control">
+                    <label>Company *</label>
+                    <input id="ref1Company" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Phone Number</label>
-                    <input id="ref1Phone" type="text" class="form-control">
+                    <label>Phone Number *</label>
+                    <input id="ref1Phone" type="text" class="form-control" required="">
                 </div>
             </div>
             <div class="row app-row bottom-history">
                 <div class="col-sm-12">
-                    <label>Adress</label>
-                    <input id="ref1Address" type="text" class="form-control">
+                    <label>Adress *</label>
+                    <input id="ref1Address" type="text" class="form-control" required="">
                 </div>
                 
             </div>
@@ -576,28 +584,28 @@
             <!-- second reference -->
             <div class="row app-row">
                 <div class="col-sm-6">
-                    <label>Full Name</label>
-                    <input id="ref2" type="text" class="form-control">
+                    <label>Full Name *</label>
+                    <input id="ref2" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Relationship</label>
-                    <input id="ref2Rel" type="text" class="form-control">
+                    <label>Relationship *</label>
+                    <input id="ref2Rel" type="text" class="form-control" required="">
                 </div>
             </div>
             <div class="row app-row">
                 <div class="col-sm-6">
-                    <label>Company</label>
-                    <input id="ref2Company" type="text" class="form-control">
+                    <label>Company *</label>
+                    <input id="ref2Company" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Phone Number</label>
-                    <input id="ref2Phone"  type="text" class="form-control">
+                    <label>Phone Number *</label>
+                    <input id="ref2Phone"  type="text" class="form-control" required="">
                 </div>
             </div>
             <div class="row app-row bottom-history">
                 <div class="col-sm-12">
-                    <label>Adress</label>
-                    <input id="ref2Address" type="text" class="form-control">
+                    <label>Adress *</label>
+                    <input id="ref2Address" type="text" class="form-control" required="">
                 </div>
                 
             </div>
@@ -605,28 +613,28 @@
           <!--   third refernce -->
             <div class="row app-row">
                 <div class="col-sm-6">
-                    <label>Full Name</label>
-                    <input id="ref3" type="text" class="form-control">
+                    <label>Full Name *</label>
+                    <input id="ref3" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Relationship</label>
-                    <input  id="ref3Rel" type="text" class="form-control">
+                    <label>Relationship *</label>
+                    <input  id="ref3Rel" type="text" class="form-control" required="">
                 </div>
             </div>
             <div class="row app-row">
                 <div class="col-sm-6">
-                    <label>Company</label>
-                    <input id="ref3Company" type="text" class="form-control">
+                    <label>Company *</label>
+                    <input id="ref3Company" type="text" class="form-control" required="">
                 </div>
                 <div class="col-sm-6">
-                    <label>Phone Number</label>
-                    <input id="ref3Phone" type="text" class="form-control">
+                    <label>Phone Number *</label>
+                    <input id="ref3Phone" type="text" class="form-control" required="">
                 </div>
             </div>
             <div class="row app-row">
                 <div class="col-sm-12">
-                    <label>Adress</label>
-                    <input id="ref3Address" type="text" class="form-control">
+                    <label>Adress *</label>
+                    <input id="ref3Address" type="text" class="form-control" required="">
                 </div>
                 
             </div>
@@ -638,9 +646,9 @@
                         If this application leads to employment, I understand that false or misleading information in my application or interview may result in my release. <p>
 
                         <label class="btn btn-default agree">
-                            <input type="radio" name="options10" id="option21" autocomplete="off" value="agreed">  I Agree
+                            <input type="radio" name="options10" id="option21" autocomplete="off" value="agreed" required="">  I Agree
                         </label>
-                        <input class="btn btn-primary submitApplication"  name="">
+                        <input class="btn btn-primary submitApplication" type="submit"  name="">
                     
                 </div>
                 

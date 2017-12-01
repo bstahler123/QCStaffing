@@ -1,300 +1,300 @@
 .container-fluid.contact-header {
-  background-color:rgb(238,244,247);
+    background-color: rgb(238, 244, 247);
 }
 
 .btn.btn-primary.btn-lg.apply-now-button {
-  background:rgb(51,178,220);
-  border-radius:3px;
-  font-size:24px;
-  padding:10px 20px;
+    background: rgb(51, 178, 220);
+    border-radius: 3px;
+    font-size: 24px;
+    padding: 10px 20px;
 }
 
 .row.contact-header-row {
-  line-height:150px;
+    line-height: 150px;
 }
 
 .front-page-contact-header {
-  font-size:24px;
-  line-height:50px;
+    font-size: 24px;
+    line-height: 50px;
 }
 
-.h3, h3 {
-  display:inline-block;
-  line-height:2;
-  vertical-align:middle;
+
+.h3,
+h3 {
+    display: inline-block;
+    line-height: 2;
+    vertical-align: middle;
 }
 
 .job-title-text {
-  line-height:normal;
+    line-height: normal;
 }
 
 .row.add-job-input {
-  padding: 20px;
-  background-color:rgb(231,229,229);
+    padding: 20px;
+    background-color: rgb(231, 229, 229);
 }
 
 .add-job {
-  line-height:normal;
+    line-height: normal;
 }
 
 .col-md-3.admin-buttons {
-  line-height:200px;
+    line-height: 200px;
 }
 
 .col-md-12.text-center.posted-jobs-heading {
-  color:rgb(30,155,201);
+    color: rgb(30, 155, 201);
 }
 
 .row.add-job-input.posted {
-  background-color:white;
-  margin-bottom: 5px;
-  border:1px solid rgb(63,180,208);
+    background-color: white;
+    margin-bottom: 5px;
+    border: 1px solid rgb(63, 180, 208);
 }
 
-.job-details{
-  height: 100px;
-  line-height: 15px;
-  color: black;
+.job-details {
+    height: 100px;
+    line-height: 15px;
+    color: black;
 }
+
 #high {
-  padding-bottom:15px;
-}
-.job-title{
-  height: 100px;
-  line-height: 15px;
-
-}
-#positionTitle{
-  border: 1px solid black;
-
+    padding-bottom: 15px;
 }
 
-
-#post{
-  margin-top: 25px;
+.job-title {
+    height: 100px;
+    line-height: 15px;
 }
-.deletePost{
-  margin-top: 50px;
 
+#positionTitle {
+    border: 1px solid black;
 }
 
 
-                    /* Login form css */
+#post {
+    margin-top: 25px;
+}
+
+.deletePost {
+    margin-top: 50px;
+}
+
+
+
+/* Login form css */
 
 .modal-dialog {
- 
-  width: 400px;
-  
-   
+
+    width: 400px;
 }
 
-.modal-content { 
-  padding: 20px;
- background-color: rgba(30,155,201, .9);
- height: 
- 
+.modal-content {
+    padding: 20px;
+    background-color: rgba(30, 155, 201, .9);
+    height:
 }
 
 
 h4 {
-  margin: 0;
-  padding: 0 0 20px;
-  color: white;  text-align: center;
+    margin: 0;
+    padding: 0 0 20px;
+    color: white;
+    text-align: center;
 }
-.modal-content p {
-  margin: 0;
-  padding: 0;
-  color: #fff;
 
+.modal-content p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
 
 .modal-content input {
-  width: 100%;
-  margin-bottom: 20px ;
-
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.modal-content input[type='email'], 
-.modal-content input[type='password']
-{
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-  height: 40px;
-  color:white;
-  font-size: 16px;
- 
+.modal-content input[type='email'],
+.modal-content input[type='password'] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
 }
 
 ::-webkit-input-placeholder {
-    color:    #999;
+    color: #999;
 }
+
 :-moz-placeholder {
-    color:    #999;
+    color: #999;
 }
+
 ::-moz-placeholder {
-    color:    #999;
+    color: #999;
 }
+
 :-ms-input-placeholder {
-    color:    #999;
+    color: #999;
 }
 
- #txtEmail::-webkit-input-placeholder{
- color: white;
-
-}
-#txtPassword::-webkit-input-placeholder{
-  color: white;
-
+#txtEmail::-webkit-input-placeholder {
+    color: white;
 }
 
-.modal-header{ 
-border: none; 
-padding: 20px;
+#txtPassword::-webkit-input-placeholder {
+    color: white;
+}
 
+.modal-header {
+    border: none;
+    padding: 20px;
 }
 
 
-#btnLogin { 
- 
-  font-size: 16px;
-  width: 200px;
-  margin-bottom: 20px;
+#btnLogin {
+
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 20px;
 }
 
-.pwdIncorrect{
-  visibility: hidden;
+.pwdIncorrect {
+    visibility: hidden;
 }
-.ion-ios-locked-outline{
-  font-size: 100px;
+
+.ion-ios-locked-outline {
+    font-size: 100px;
 }
+
 .btnAddPosition {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
- /*Styling the postions page */
 
-.maps { 
-background-color: rgb(63,180,208);
-margin-bottom: 0px;
+/*Styling the postions page */
 
- }
-.maps > h2,p {
-  color: white;
-
-}
-.maps > p {
-  color: white;
-  font-size: 18px;
-  font-family: 'Roboto';
-}
-.directionsBtn {
-  margin: 20px;
-  font-size: 16px;
-}
-@media (max-width:992px) {
-  .maps {
+.maps {
+    background-color: rgb(63, 180, 208);
     margin-bottom: 0px;
-  }
+}
+
+.maps>h2,
+p {
+    color: white;
+}
+
+.maps>p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.directionsBtn {
+    margin: 20px;
+    font-size: 16px;
+}
+
+@media (max-width:992px) {
+    .maps {
+        margin-bottom: 0px;
+    }
 }
 
 .detailsHeader {
-  color: black;
+    color: black;
 }
 
-.titleHeader{
-  color: black;
+.titleHeader {
+    color: black;
 }
 
 .black {
-  color: black;
+    color: black;
 }
 
 .apply {
-  border-radius:0;
-  width:30%;
-  height:40px;
-  font-size:1em;
-  background:#00aeef;
-  color: white;
+    border-radius: 0;
+    width: 30%;
+    height: 40px;
+    font-size: 1em;
+    background: #00aeef;
+    color: white;
 }
+
 .positionsBanner {
-  
-  background-color: #e8f4f9;
-  padding: 20px 0px 10px 0px;
-  font-size: 36px;
+
+    background-color: #e8f4f9;
+    padding: 20px 0px 10px 0px;
+    font-size: 36px;
 
 
 
-  font-weight: bold;
-
-
-
+    font-weight: bold;
 }
 
-.positionsBanner > h4 {
-  font-size: 36px;
+.positionsBanner>h4 {
+    font-size: 36px;
 
-  
-  color: rgb(63,180,208);
-}
-.noMargin{
- 
+
+    color: rgb(63, 180, 208);
 }
 
-.application{ 
-  
-  
-  padding: 50px;
+.noMargin {}
 
- } 
- .app-row {
-  margin-top: 5px;
- }
+.application {
 
- .application-header{
-  margin-bottom: 50px;
 
- }
+    padding: 50px;
+}
 
- .bottom-history {
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
- }
+.app-row {
+    margin-top: 5px;
+}
 
- .disclaimer {
-  padding:10px;
-  border:1px solid black;
-  background-color: lightgrey;
- }
- .disclaimer > p{
-  color: black;
-  font-size: 10px;
- }
+.application-header {
+    margin-bottom: 50px;
+}
 
- .agree {
-  margin-left: 40%;
- }
+.bottom-history {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
 
- @media only screen and (max-width: 500px) {
+.disclaimer {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: lightgrey;
+}
+
+.disclaimer > p {
+    color: black;
     
-      .application{   
+}
+
+.agree {
+    margin-left: 40%;
+}
+
+.printApps> p{
+    margin-top:50px;
+    color: black;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .application {
         padding: 10px;
-
- } 
- .agree {
-  margin-left: 30%;
- }
-        
+    }
+    .agree {
+        margin-left: 30%;
+    }
+    .disclaimer > p {
     
+    font-size: 10px;
 }
-
-
-
-
-
-
-
-
-
+}

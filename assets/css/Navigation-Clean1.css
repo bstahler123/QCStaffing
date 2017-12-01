@@ -8,9 +8,13 @@
   border:none;
   margin-bottom:0;
   z-index: 1000;
+  min-height: 80px;
 }
 .navbar-default {
 padding: 15px 20px 0px 20px;
+}
+.navigation-clean .navbar-header{
+  margin-top: 15px;
 }
 
 
@@ -91,8 +95,10 @@ padding: 15px 20px 0px 20px;
 }
 
 .navigation-clean.navbar .navbar-nav > li > a {
-  padding-left:18px;
-  padding-right:18px;
+  padding-left:10px;
+  padding-right:10px;
+  margin-top: 15px;
+  margin-right:10px;
 }
 
 .navigation-clean.navbar-default .navbar-nav > li > a {
