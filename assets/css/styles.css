@@ -286,6 +286,10 @@ p {
 }
 
 @media only screen and (max-width: 500px) {
+    .modal-dialog {
+
+    width: 350px;
+}
 
     .application {
         padding: 10px;
