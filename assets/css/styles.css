@@ -288,7 +288,7 @@ p {
 @media only screen and (max-width: 500px) {
     .modal-dialog {
 
-    width: 350px;
+    width: 325px;
 }
 
     .application {
