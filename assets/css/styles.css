@@ -225,6 +225,7 @@ p {
     background: #00aeef;
     color: white;
 }
+.deleteApp { margin: 5px; }
 
 .positionsBanner {
 
@@ -235,6 +236,12 @@ p {
 
 
     font-weight: bold;
+}
+
+.printing {
+    margin: 50px;
+  
+
 }
 
 .positionsBanner>h4 {
@@ -280,15 +287,21 @@ p {
     margin-left: 40%;
 }
 
-.printApps> p{
+.appDiv > p{
     margin-top:50px;
     color: black;
+
 }
+
+.appDiv {
+    border-bottom: 1px solid black;
+}
+
 
 @media only screen and (max-width: 500px) {
     .modal-dialog {
 
-    width: 335px;
+    width: 345px;
     
 }
 

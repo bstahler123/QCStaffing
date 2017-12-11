@@ -149,9 +149,17 @@ $(document).ready(function() {
 
     });
 
+     $(".appDiv").on('click', '.printApp', function(){ 
+          
+               console.log("hello");
+
+
+            });
+
     // getting user information from application
 
-    $(".submitApplication").on('click', function() {
+    $("#test").on('submit', event => {
+        event.preventDefault();
 
         //general
         firstName = $('#firstName').val().trim();
@@ -411,11 +419,12 @@ $(document).ready(function() {
 
     function gotData2(data) {
 
-       
+        $(".printApps").html('');
         var person = data.val();
         var keys = Object.keys(person);
         for (var i = 0; i < keys.length; i++) {
             var k = keys[i];
+            newKey = keys[i];
 
              var persons = {
                 one: person[k].field1,
@@ -520,7 +529,9 @@ $(document).ready(function() {
            
 
 
-            $(".printApps").append("<p>" + persons.one + "<br>" +  persons.two + "<br>" + persons.three +  "<br>" + 
+            $(".printApps").append( "<div class='appDiv' id=" + newKey + ">" + 
+
+                                    "<p>" + persons.one + "<br>" +  persons.two + "<br>" + persons.three +  "<br>" + 
                                     "<br>" + persons.four + "<br>" +  persons.five + "<br>" + persons.six +  "</br>" + 
                                     "<br>" + persons.seven + "<br>" +  persons.eight + "<br>" + persons.nine +  "<br>" +
                                     "<br>" + persons.ten + "<br>" +  persons.eleven + "<br>" + persons.twelve +  "<br>" +
@@ -555,24 +566,63 @@ $(document).ready(function() {
                                     "<br>" + persons.eightySeven + "<br>" + 
 
 
+                                     
+
+                                      "</p>" + 
+                                      "<button class='btn btn-info printApp' value="+ newKey + ">" + "Print" + "</button>" + 
+
+                                      "<button class='btn btn-danger deleteApp'>" + "Delete" + "</button>" + 
 
 
-                                      "</p>" 
+
+                                       "</div>" 
+
+                                   
 
 
                 );
-
-                
-
+               
 
         }
     }
 
+   
+ $(".printApps").on('click', '.printApp', function(){ 
+    appId = $(this).val()
+          
+               console.log($(this).val());
+
+               function PrintElem(elem)
+{
+    var mywindow = window.open('', 'PRINT', 'height=400,width=600');
+
+    mywindow.document.write('<html><head><title>' + document.title  + '</title>');
+    mywindow.document.write('</head><body >');
+    mywindow.document.write('<h1>' + document.title  + '</h1>');
+    mywindow.document.write(document.getElementById(appId).innerHTML);
+    mywindow.document.write('</body></html>');
+
+   
+    mywindow.print();
+    mywindow.close();
+
+    return true;
+}
+
+PrintElem();
+
+
+   
+   
 
 
 
 
 
+
+            });
+
+ 
 
 
             $(".addPosition").show();
@@ -584,5 +634,6 @@ $(document).ready(function() {
         }
 
     });
+
 
 });
