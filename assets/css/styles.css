@@ -307,12 +307,24 @@ p {
 .appDiv {
     border-bottom: 1px solid black;
 }
+#woman > h1{
+    margin-bottom: 20px;
+
+}
+
+.carousel-caption > h1 {
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
 
 
 @media only screen and (max-width: 500px) {
 
     .carousel-caption > h1 {
         font-size: 30px;
+    }
+    .contactHeader{
+        height: 50px;
     }
 
 
