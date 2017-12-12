@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+
+
+       $('.carousel').carousel({
+   interval: 8000
+  });
+
     // Initialize Firebase
     var config = {
         apiKey: "AIzaSyBIbcdYdVCPRVE4d1vTOl4IBKIrghLtKCg",
@@ -9,6 +15,7 @@ $(document).ready(function() {
         storageBucket: "",
         messagingSenderId: "974593829471"
     };
+
 
     firebase.initializeApp(config);
     database = firebase.database();
@@ -29,6 +36,7 @@ $(document).ready(function() {
         const email = txtEmail.val();
         const pass = txtPassword.val();
         const auth = firebase.auth();
+        
 
         // Sign in
 
@@ -40,14 +48,15 @@ $(document).ready(function() {
 
 
         }).catch(function(error) {
+            console.log("there is an error");
 
             $('.pwdIncorrect').removeClass('pwdIncorrect');
         });
 
     });
-    $('.carousel').carousel({
-   interval: 8000
-  });
+
+
+  
 
 
     // logout button
