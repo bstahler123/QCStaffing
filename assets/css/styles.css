@@ -18,6 +18,7 @@
     line-height: 50px;
 }
 
+
 .overlay {
     position:absolute;
     top:0px;
@@ -309,6 +310,13 @@ p {
 
 
 @media only screen and (max-width: 500px) {
+
+    .carousel-caption > h1 {
+        font-size: 30px;
+    }
+
+
+
     .modal-dialog {
 
     width: 345px;
