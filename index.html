@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
     <link rel="stylesheet" href="assets/css/ebs-contact-form.css">
-   
     <link rel="stylesheet" href="assets/css/features-with-waves-effect.css">
     <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
@@ -25,92 +24,109 @@
 </head>
 
 <body>
-    
     <div class="navbar-container">
         <nav class="navbar navbar-default navigation-clean">
-           
-                <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" style="font-family:Bitter, serif;">Quality Controlled Staffing </a>
-                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                </div>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    
-                    <ul class="nav navbar-nav navbar-right">
-                       <li class="addPosition" role="presentation"><a href="admin.html" style="color:rgb(30,155,201);">Add/Remove Positions</a></li>
-                        
-                        <li class="active" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" class="data-toggle=&quot;modal&quot; data-target=&quot;#modal1&quot;" style="color:rgb(30,155,201);">Admin Login</a></li>
-                        <li role="presentation"><a href="clients.html" style="color:rgb(30,155,201);">Clients </a></li>
-                        <li class="try" role="presentation"><a href="positions.html" style="color:rgb(30,155,201);">Open positions</a></li>
-                        <li class="printUsers" role="presentation"><a href="printapps.html" style="color:rgb(30,155,201);">Print Applications</a></li>
-                       
-                    </ul>
-                </div>
-            
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" style="font-family:Bitter, serif;">Quality Controlled Staffing </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="addPosition" role="presentation"><a href="admin.html" style="color:rgb(30,155,201);">Add/Remove Positions</a></li>
+                    <li class="active" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" class="data-toggle=&quot;modal&quot; data-target=&quot;#modal1&quot;" style="color:rgb(30,155,201);">Admin Login</a></li>
+                    <li role="presentation"><a href="clients.html" style="color:rgb(30,155,201);">Clients </a></li>
+                    <li class="try" role="presentation"><a href="positions.html" style="color:rgb(30,155,201);">Open positions</a></li>
+                    <li class="printUsers" role="presentation"><a href="printapps.html" style="color:rgb(30,155,201);">Print Applications</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
- 
-    
-    <div class="simple-slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(&quot;assets/img/Pointing.jpg&quot;);">
-                    				<div class="caption v-middle text-center">
-					<h1 class="cd-headline clip">
-			            <span class="blc">We Provide | </span>
-			            <span class="cd-words-wrapper">
-			              <b class="is-visible">Insight.</b>
-			              <b>Strategy.</b>
-			              <b>Quality.</b>
-			            </span>
-	          		</h1>
-				</div>
-                </div>
-                <div class="swiper-slide" style="background-image:url(&quot;assets/img/woman.jpg&quot;);"></div>
-                <div class="swiper-slide" style="background-image:url(&quot;assets/img/Vector.jpg&quot;);"></div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img id='firstPic' src="assets/img/Pointing.jpg" style="max-height: 600px; width:100%;" alt="...">
+                <div class="overlay"></div>
+                
+                <div class="carousel-caption">
+                    <h1> We Provide Insight, strategy and processes.</h1>
+                    
+                
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            </div>
+            <div class="item">
+                <img src="assets/img/woman.jpg" style="max-height: 600px; width:100%; " alt="...">
+
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h1>Ready to Explore New Possibilities? Give us a call today.</h1>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/img/year.jpg" style="max-height: 600px; width:100%;" alt="...">
+
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                      <h1>Ready to make a change or explore a new career path?</h1>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    </div>
+    <div class="container-fluid contact-header">
+        <div class="row contact-header-row">
+            <div class="col-md-9 text-center">
+                <h3 style="font-family:Bitter, serif;">Call us today at&nbsp;563-345-6888 or Email us at&nbsp;QCStaffing.com </h3></div>
+            <div class="col-md-3 text-center">
+                <a href="positions.html">
+                    <button class="btn btn-primary btn-lg apply-now-button" type="button" style="font-family:Bitter, serif;">Apply Now </button>
+                </a>
+            </div>
         </div>
     </div>
-    <div>
-        <div class="container-fluid contact-header">
-            <div class="row contact-header-row">
-                <div class="col-md-9 text-center">
-                    <h3 style="font-family:Bitter, serif;">Call us today at&nbsp;563-345-6888 or Email us at&nbsp;QCStaffing.com </h3></div>
-                <div class="col-md-3 text-center">
-                    <a href="positions.html"><button class="btn btn-primary btn-lg apply-now-button" type="button" style="font-family:Bitter, serif;">Apply Now </button></a>
+    <div class="container">
+        <div class="row row-fitur">
+            <div class="col-md-4 col-sm-4 waves-effect kolom-a">
+                <div class="fitur-a"><img src="assets/img/2.png"></div>
+                <div class="separator-fitur"></div>
+                <div>
+                    <h4 class="heading-fitur">Insight </h4>
+                    <p class="paragraf-fitur">We look beyond matching resumes with job requirements. We locate candidates who fit seamlessly with the unique culture of your organization and hit the ground running. That takes insight and a keen awareness of your goals. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 waves-effect kolom-b">
+                <div class="fitur-a"><img src="assets/img/1.png"></div>
+                <div class="separator-fitur"></div>
+                <div>
+                    <h4 class="heading-fitur">Strategy </h4>
+                    <p class="paragraf-fitur">Filling positions can require significant time and resources. When you consider the time and money you save through lasting employment, it quickly becomes clear that we represent a solid return on investment. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 waves-effect kolom-c">
+                <div class="fitur-a"><img src="assets/img/3.png"></div>
+                <div class="separator-fitur"></div>
+                <div>
+                    <h4 class="heading-fitur">Processes </h4>
+                    <p class="paragraf-fitur">To find the right person for the job, we draw&nbsp;upon in-depth consultations to determine not only the job requirements, but to gain a broader perspective of your organization. &nbsp;We&nbsp;create matches based upon shared values and expectations. </p>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row row-fitur">
-                <div class="col-md-4 col-sm-4 waves-effect kolom-a">
-                    <div class="fitur-a"><img src="assets/img/2.png"></div>
-                    <div class="separator-fitur"></div>
-                    <div>
-                        <h4 class="heading-fitur">Insight </h4>
-                        <p class="paragraf-fitur">We look beyond matching resumes with job requirements. We locate candidates who fit seamlessly with the unique culture of your organization and hit the ground running. That takes insight and a keen awareness of your goals. </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 waves-effect kolom-b">
-                    <div class="fitur-a"><img src="assets/img/1.png"></div>
-                    <div class="separator-fitur"></div>
-                    <div>
-                        <h4 class="heading-fitur">Strategy </h4>
-                        <p class="paragraf-fitur">Filling positions can require significant time and resources. When you consider the time and money you save through lasting employment, it quickly becomes clear that we represent a solid return on investment. </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 waves-effect kolom-c">
-                    <div class="fitur-a"><img src="assets/img/3.png"></div>
-                    <div class="separator-fitur"></div>
-                    <div>
-                        <h4 class="heading-fitur">Processes </h4>
-                        <p class="paragraf-fitur">To find the right person for the job, we draw&nbsp;upon in-depth consultations to determine not only the job requirements, but to gain a broader perspective of your organization. &nbsp;We&nbsp;create matches based upon shared values
-                            and expectations. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </div>
     <div class="highlight-phone top-highlight">
         <div class="container">
@@ -119,12 +135,11 @@
                     <div class="intro">
                         <h2>Ready to Explore New Possibilities? </h2>
                         <p>Please fill out the form to the left, and a recruiter will contact you within 24 hours for a free consultation. We will work with you one on one to determine a road map to success. We look forward to working with you soon. </p>
-                        <a
-                        class="btn btn-primary" role="button" href="#">Download Application</a>
+                        <a class="btn btn-primary" role="button" href="#">Download Application</a>
                     </div>
                 </div>
                 <div class="col-sm-4 hidden-xs">
-                    <div class="iphone-mockup"><img src="assets/img/xbusiness.jpg.pagespeed.ic.ejkvxt5PUi.jpg" class="device" style="width:350px;height:230px;"></div>
+                    <div class="iphone-mockup"><img src="assets/img/jumping.jpg" class="device" style="width:350px;height:230px;"></div>
                 </div>
             </div>
         </div>
@@ -136,8 +151,7 @@
                     <div class="intro">
                         <h2>Are you an employer?</h2>
                         <p>Please fill out the form to the left, and a recruiter will contact you within 24 hours for a free consultation. We will work with you one on one to determine a road map to success. We look forward to working with you soon. </p>
-                        <a
-                        class="btn btn-primary" role="button" href="#">SCHEDULE Consultation</a>
+                        <a class="btn btn-primary" role="button" href="#">SCHEDULE Consultation</a>
                     </div>
                 </div>
                 <div class="col-sm-4 hidden-xs">
@@ -154,48 +168,46 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                         <p class="text-center"><i class="ion-ios-locked-outline"></i></p>
                     </div>
-                            <form>
-                       
-                    <div class="modal-body">
-                        
-                        <input type="email" required="" placeholder="Email" id="txtEmail" style="">
-                        <input type="password" placeholder="Password" id="txtPassword" ">
+                    <form>
+                        <div class="modal-body">
+                            <input type="email" required="" placeholder="Email" id="txtEmail" style="">
+                            <input type="password" placeholder="Password" id="txtPassword" ">
                     </div>
                         </form>
-                    <div class="modal-bottom text-center">
-                       <!--  <button class="btn btn-default" type="button" data-dismiss="modal">Close</button> -->
-                        <button class="btn btn-success" type="button" id="btnLogin">Login </button>
+                    <div class="modal-bottom text-center ">
+                       <!--  <button class="btn btn-default " type="button " data-dismiss="modal ">Close</button> -->
+                        <button class="btn btn-success " type="button " id="btnLogin ">Login </button>
                         
-                        <p class="pwdIncorrect">Incorrect Username/Password</p>
+                        <p class="pwdIncorrect ">Incorrect Username/Password</p>
                         
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer-clean">
+    <div class="footer-clean ">
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 item">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-3 col-sm-6 item ">
                         <h3>Services</h3>
                         <ul>
-                            <li><a href="#">Full /Part time eployment</a></li>
-                            <li><a href="#">Bussiness development</a></li>
-                            <li><a href="#">Bussiness insight</a></li>
+                            <li><a href="# ">Full /Part time eployment</a></li>
+                            <li><a href="# ">Bussiness development</a></li>
+                            <li><a href="# ">Bussiness insight</a></li>
                         </ul>
                     </div>
                    
-                    <div class="col-md-3 col-sm-6 item">
+                    <div class="col-md-3 col-sm-6 item ">
                         <h3>Careers</h3>
                         <ul>
-                            <li><a href="#">Job openings</a></li>
-                            <li><a href="#">Employee success</a></li>
-                            <li><a href="#">Benefits</a></li>
+                            <li><a href="# ">Job openings</a></li>
+                            <li><a href="# ">Employee success</a></li>
+                            <li><a href="# ">Benefits</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">Quality Control Staffing © 2017 </p>
+                    <div class="col-md-3 item social "><a href="# "><i class="icon ion-social-facebook "></i></a><a href="# "><i class="icon ion-social-twitter "></i></a><a href="# "><i class="icon ion-social-snapchat "></i></a><a href="# "><i class="icon ion-social-instagram "></i></a>
+                        <p class="copyright ">Quality Control Staffing © 2017 </p>
                         
                     </div>
                 </div>
@@ -203,13 +215,13 @@
         </footer>
     </div>
 
-     <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="assets/js/Animated-Type-Heading.js"></script>
-    <script src="assets/js/firebase.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="assets/js/Animated-Type-Heading.js "></script>
+    <script src="assets/js/firebase.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js "></script>
+    <script src="assets/js/Simple-Slider.js "></script>
 </body>
 
 </html>

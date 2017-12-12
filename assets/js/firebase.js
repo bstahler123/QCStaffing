@@ -612,24 +612,19 @@ $(document).ready(function() {
 PrintElem();
 
 
-   
-   
-
-
-
-
 
 
             });
 
  
-
+            $(".printUsers").show();
 
             $(".addPosition").show();
 
         } else {
 
             $(".addPosition").hide();
+            $(".printUsers").hide();
 
         }
 
