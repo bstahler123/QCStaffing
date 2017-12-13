@@ -317,11 +317,19 @@ p {
 }
 
 
+.carousel-caption > h1 {
+      
+    }
+
+
+
+
 
 
 .carousel-caption > h1 {
         margin-bottom: 50px;
-        font-size: 40px;
+        font-size: 70px;
+        font-family: 'PT Sans Narrow', sans-serif;
     }
 
 
