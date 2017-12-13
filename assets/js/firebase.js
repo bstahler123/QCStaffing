@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 
        $('.carousel').carousel({
-   interval: 8000
+   interval: 7000
   });
 
     // Initialize Firebase
@@ -16,7 +16,7 @@ $(document).ready(function() {
         messagingSenderId: "974593829471"
     };
 
-     
+
 
 
     firebase.initializeApp(config);

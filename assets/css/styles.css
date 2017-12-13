@@ -19,6 +19,27 @@
 }
 
 
+.navigation-clean {  
+    color: #333;
+    border-radius: 0;
+    box-shadow: none;
+   
+   
+}
+
+.navbar > .container .navbar-brand{
+    font-size: 18px;
+    font-family: Arsenal, sans-serif;
+
+}
+
+
+body { 
+    padding-top: 50px; 
+}
+
+
+
 .overlay {
     position:absolute;
     top:0px;
@@ -195,11 +216,13 @@ h4 {
 }
 
 
+
 /*Styling the postions page */
 
 .maps {
     background-color: rgb(63, 180, 208);
     margin-bottom: 0px;
+
 }
 
 .maps>h2,
