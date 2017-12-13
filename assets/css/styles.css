@@ -332,12 +332,17 @@ p {
         font-family: 'PT Sans Narrow', sans-serif;
     }
 
+@media only screen and (max-width: 650px) {
+     .carousel-caption > h1 {
+        font-size: 30px;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-weight: bold;
+    }
 
+}
 @media only screen and (max-width: 500px) {
 
-    .carousel-caption > h1 {
-        font-size: 30px;
-    }
+   
 
     .modal-dialog {
 
