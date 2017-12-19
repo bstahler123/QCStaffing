@@ -176,6 +176,33 @@ $(document).ready(function() {
 
     });
 
+
+    //clients form
+      $("#my-form").on('submit', event => {
+                event.preventDefault();
+
+                var firstname = $("#firstname").val().trim();
+                var lastname = $("#lastname").val().trim();
+                var phonenumber = $("#phonenumber").val().trim();
+                var email = $("#email").val().trim();
+                var messages = $("#messages").val().trim();
+                firebase.database().ref('client').push({
+                    firstname,
+                    lastname,
+                    phonenumber,
+                    email,
+                    messages
+
+
+                });
+                 $(".alert").fadeTo(500, 1.0).delay(3000);
+                $(".alert").fadeTo(1000, 0.0);
+                document.getElementById("my-form").reset();
+
+
+
+            });
+
     // getting user information from application
 
     $("#test").on('submit', event => {
@@ -698,30 +725,7 @@ $(document).ready(function() {
                 }
             }
 
-            $("#my-form").on('submit', event => {
-                event.preventDefault();
-
-                var firstname = $("#firstname").val().trim();
-                var lastname = $("#lastname").val().trim();
-                var phonenumber = $("#phonenumber").val().trim();
-                var email = $("#email").val().trim();
-                var messages = $("#messages").val().trim();
-                firebase.database().ref('client').push({
-                    firstname,
-                    lastname,
-                    phonenumber,
-                    email,
-                    messages
-
-
-                });
-                 $(".alert").fadeTo(500, 1.0).delay(3000);
-                $(".alert").fadeTo(1000, 0.0);
-                document.getElementById("my-form").reset();
-
-
-
-            });
+          
 
 
             // Printing Client messages
