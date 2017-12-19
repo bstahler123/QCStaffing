@@ -31,7 +31,14 @@
     font-size: 18px;
     font-family: Arsenal, sans-serif;
 
+
 }
+.navbar-default {
+  background-color:#e8f4f9;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+
 
 
 body { 
@@ -220,20 +227,23 @@ h4 {
 /*Styling the postions page */
 
 .maps {
-    background-color: rgb(63, 180, 208);
+   
     margin-bottom: 0px;
+     background-color: rgba(63,180,208, 0.5);
 
 }
 
 .maps>h2,
 p {
-    color: white;
+    font-family: Arsenal, sans-serif;
+    color: rgba(0,0,0, 0.8);
 }
 
 .maps>p {
-    color: white;
+     color: rgba(0,0,0, 0.8);
     font-size: 18px;
-    font-family: 'Roboto';
+    
+    font-family: Arsenal, sans-serif;
 }
 
 .directionsBtn {
@@ -260,12 +270,7 @@ p {
 }
 
 .apply {
-    border-radius: 0;
-    width: 30%;
-    height: 40px;
-    font-size: 1em;
-    background: #00aeef;
-    color: white;
+    
 }
 .deleteApp { margin: 5px; }
 

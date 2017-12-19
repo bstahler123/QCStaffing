@@ -13,7 +13,7 @@
 }
 
 .highlight-phone p {
-  color:#7d8285;
+  color: rgba(0,0,0,0.7);
 }
 
 .highlight-phone h2 {
@@ -23,6 +23,7 @@
   padding-top:0;
   margin-top:0;
   color:inherit;
+  font-family: Arsenal, sans-serif;
 }
 
 .highlight-phone .intro {
@@ -54,6 +55,7 @@
   font-size:13px;
   letter-spacing:0.4px;
   line-height:1;
+  font-family: Arsenal, sans-serif;
 }
 
 .highlight-phone .intro .btn:hover {
@@ -76,10 +78,16 @@
 }
 
 .highlight-phone.bottom-article {
-  background-color:rgb(238,244,247);
+  background-color:rgba(63,180,208, 0.5);
+   border-top: 1px solid rgba(63,180, 208, 0.5);
+   font-family: Arsenal, sans-serif;
+   
 }
 
 .highlight-phone.top-highlight {
-  border-top:1px solid rgb(68,183,220);
+  font-family: Arsenal, sans-serif;
+  background-color:#F9F8F8;
+  
+ 
 }
 

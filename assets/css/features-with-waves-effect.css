@@ -14,16 +14,6 @@
   font-weight:300;
 }
 
-.waves-effect {
-  position:relative;
-  cursor:pointer;
-  overflow:hidden; 
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-  z-index:1;
-}
 
 @media (max-width:991px) {
   .row-fitur {
@@ -78,16 +68,8 @@
 }
 
 
-.kolom-a:hover {
-  background: #f5f5f5;
-  border-radius:4px;
-  transition:0.2s; 
-}
-.colPositions:hover {
-  border: 1px  solid #0fb2ef;
-  border-radius:4px;
-  transition:0.2s; 
-}
+
+
 .colPositions{
   height: 400px;
 }
@@ -106,15 +88,16 @@
 
 }
 .apply {
-  font-size: 18px;
-  margin-top: 40px;
+  font-size: 15px;
+  margin-top: 20px;
+
 }
 
 .paragraf-fitur {
   color:#606060;
   font-size:18px;
   font-weight:300;
-  font-family:'Roboto';
+ font-family: Arsenal, sans-serif;
   padding: 15px;
  
 
@@ -132,8 +115,8 @@
   font-size:24px;
   color:#00aeef;
   margin-bottom:10px;
-  font-family:'Roboto';
-  padding-bottom: 10px;
+    padding-bottom: 10px;
+    font-family: Arsenal, sans-serif;
 
 }
 

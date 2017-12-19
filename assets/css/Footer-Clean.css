@@ -1,7 +1,8 @@
 .footer-clean {
   padding:50px 0;
-  background-color:#31aad5;
-  color:#fbfcfe;
+  background-color:#e8f4f9;
+  color: black;
+  font-family: Arsenal, sans-serif;
 }
 
 .footer-clean h3 {
@@ -82,5 +83,6 @@
   margin-bottom:0;
   font-size:13px;
   opacity:0.6;
+  color: black;
 }
 
