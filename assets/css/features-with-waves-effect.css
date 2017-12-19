@@ -54,22 +54,6 @@
 }
 
 
-.kolom-c:hover {
-  transition:0.2s;
-  background:#f5f5f5;
-  border-radius:4px;
-}
-
-.kolom-b:hover {
-  border-radius:4px;
-  transition:0.2s;
-  background: #f5f5f5 ;
-
-}
-
-
-
-
 .colPositions{
   height: 400px;
 }
