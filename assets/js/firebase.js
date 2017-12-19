@@ -2,9 +2,9 @@ $(document).ready(function() {
 
 
 
-       $('.carousel').carousel({
-   interval: 5000
-  });
+    $('.carousel').carousel({
+        interval: 5000
+    });
 
     // Initialize Firebase
     var config = {
@@ -15,6 +15,10 @@ $(document).ready(function() {
         storageBucket: "",
         messagingSenderId: "974593829471"
     };
+
+
+
+
 
 
 
@@ -32,13 +36,14 @@ $(document).ready(function() {
     var newKey;
     var newArray = [];
 
+
     // login button
 
     $("#btnLogin").on('click', e => {
         const email = txtEmail.val();
         const pass = txtPassword.val();
         const auth = firebase.auth();
-        
+
 
         // Sign in
 
@@ -58,7 +63,7 @@ $(document).ready(function() {
     });
 
 
-  
+
 
 
     // logout button
@@ -164,12 +169,12 @@ $(document).ready(function() {
 
     });
 
-     $(".appDiv").on('click', '.printApp', function(){ 
-          
-               console.log("hello");
+    $(".appDiv").on('click', '.printApp', function() {
+
+        console.log("hello");
 
 
-            });
+    });
 
     // getting user information from application
 
@@ -286,131 +291,216 @@ $(document).ready(function() {
         // console logging user information
 
 
-       
-    field1 =  "First Name: " + firstName;
-    field2 = "Last Name: " + lastName;
-    field3 =  "M.I.: " + mi;
-    field4 = "Date: " + date;
-    field5 =   "Street address:" + streetAddress;
-    field6 = "Apt#: " + aptNumber;
-    field7 =  "City: " + city;
-    field8 =  "state: " + state;
-    field9 =  "zip: " + zip;
-    field10 =    "phoneNumber: " + phoneNumber;
-    field11 =   "emailAddress: " + emailAddress;
-    field12 =    "dateAvailable: " + dateAvailable;
-    field13 =   "SS#: " + ssNumber;
-    field14 =    "DesiredSalary: " + desiredSalary;
-    field15 =   "Position Applying for: " + positionApplying;
 
-    field16 = "US citizen ? " + radioValue;
-    field17 = "Authorized to work in US ? " + radioValue1;
-    field18 = "Ever worked for this company ? " + radioValue2;
-    field19 = "When did you work here ? " + workedHere;
-     field20 = "Valid drivers license ? " + radioValue3;
+        field1 = "First Name: " + firstName;
+        field2 = "Last Name: " + lastName;
+        field3 = "M.I.: " + mi;
+        field4 = "Date: " + date;
+        field5 = "Street address:" + streetAddress;
+        field6 = "Apt#: " + aptNumber;
+        field7 = "City: " + city;
+        field8 = "state: " + state;
+        field9 = "zip: " + zip;
+        field10 = "phoneNumber: " + phoneNumber;
+        field11 = "emailAddress: " + emailAddress;
+        field12 = "dateAvailable: " + dateAvailable;
+        field13 = "SS#: " + ssNumber;
+        field14 = "DesiredSalary: " + desiredSalary;
+        field15 = "Position Applying for: " + positionApplying;
+
+        field16 = "US citizen ? " + radioValue;
+        field17 = "Authorized to work in US ? " + radioValue1;
+        field18 = "Ever worked for this company ? " + radioValue2;
+        field19 = "When did you work here ? " + workedHere;
+        field20 = "Valid drivers license ? " + radioValue3;
 
 
         // job history 1
 
-    field21 = "Company: " + job1;
-    field22 = "Number: " + job1Number;
-    field23 = "Address: " + job1Address;
-    field24 = "Supervisor: " + job1Supervisor;
-    field25 = "Title: " + job1Title;
-    field26 = "Starting pay: " + job1StartingSalary;
-    field27 = "Ending pay:  " + job1EndingSalary;
-    field28 = "From: " + job1Start;
-    field29 = "To: " + job1End;
-    field30 = "Reason for leaving: " + job1Reason;
-    field31 = "Can we contact first ref ? " + radioValue4;
+        field21 = "Company: " + job1;
+        field22 = "Number: " + job1Number;
+        field23 = "Address: " + job1Address;
+        field24 = "Supervisor: " + job1Supervisor;
+        field25 = "Title: " + job1Title;
+        field26 = "Starting pay: " + job1StartingSalary;
+        field27 = "Ending pay:  " + job1EndingSalary;
+        field28 = "From: " + job1Start;
+        field29 = "To: " + job1End;
+        field30 = "Reason for leaving: " + job1Reason;
+        field31 = "Can we contact first ref ? " + radioValue4;
 
         // job history 2
-    field32 = "Company: " + job2;
-    field33 = "Number: " + job2Number;
-    field34 = "Address: " + job2Address;
-    field35 = "Supervisor: " + job2Supervisor;
-    field36 = "Title: " + job2Title;
-    field37 = "Starting pay: " + job2StartingSalary;
-    field38 = "Ending pay:  " + job2EndingSalary;
-    field39 = "From: " + job2Start;
-    field40 = "To: " + job2End;
-    field41 = "Reason for leaving: " + job2Reason;
-    field42 = "Can we contact second ref ? " + radioValue5;
+        field32 = "Company: " + job2;
+        field33 = "Number: " + job2Number;
+        field34 = "Address: " + job2Address;
+        field35 = "Supervisor: " + job2Supervisor;
+        field36 = "Title: " + job2Title;
+        field37 = "Starting pay: " + job2StartingSalary;
+        field38 = "Ending pay:  " + job2EndingSalary;
+        field39 = "From: " + job2Start;
+        field40 = "To: " + job2End;
+        field41 = "Reason for leaving: " + job2Reason;
+        field42 = "Can we contact second ref ? " + radioValue5;
         // job hostory 3
-    field43 = "Company: " + job3;
-    field44 = "Number: " + job3Number;
-    field45 = "Address: " + job3Address;
-    field46 = "Supervisor: " + job3Supervisor;
-    field47 = "Title: " + job3Title;
-    field48 = "Starting pay: " + job3StartingSalary;
-    field49 = "Ending pay:  " + job3EndingSalary;
-    field50 = "From: " + job3Start;
-    field51 = "To: " + job3End;
-    field52 = "Reason for leaving: " + job3Reason;
-    field53 = "Can we contact third ref ? " + radioValue6;
+        field43 = "Company: " + job3;
+        field44 = "Number: " + job3Number;
+        field45 = "Address: " + job3Address;
+        field46 = "Supervisor: " + job3Supervisor;
+        field47 = "Title: " + job3Title;
+        field48 = "Starting pay: " + job3StartingSalary;
+        field49 = "Ending pay:  " + job3EndingSalary;
+        field50 = "From: " + job3Start;
+        field51 = "To: " + job3End;
+        field52 = "Reason for leaving: " + job3Reason;
+        field53 = "Can we contact third ref ? " + radioValue6;
 
 
 
 
         // education
 
-    field54 = "High School: " + highSchool;
-    field55 = "Address: " + highSchoolAddress;
-    field56 = "From: " + highFrom;
-    field57 = "To: " + highTo;
-    field58 = "Degree: " + highDegree;
-    field59 = "Did you graduate High School ? " + radioValue7;
+        field54 = "High School: " + highSchool;
+        field55 = "Address: " + highSchoolAddress;
+        field56 = "From: " + highFrom;
+        field57 = "To: " + highTo;
+        field58 = "Degree: " + highDegree;
+        field59 = "Did you graduate High School ? " + radioValue7;
 
-    field60 = "College: " + college;
-    field61 = "Address: " + collegeAddress;
-    field62 = "From: " + collegeFrom;
-    field63 = "To: " + collegeTo;
-    field64 = "Degree: " + collegeDegree;
-    field65 = "Did you graduate from college ? " + radioValue8;
+        field60 = "College: " + college;
+        field61 = "Address: " + collegeAddress;
+        field62 = "From: " + collegeFrom;
+        field63 = "To: " + collegeTo;
+        field64 = "Degree: " + collegeDegree;
+        field65 = "Did you graduate from college ? " + radioValue8;
 
-    field66 = "Other: " + other;
-    field67 = "Address: " + otherAddress;
-    field68 = "From: " + otherFrom;
-    field69 = "To: " + otherTo;
-    field70 = "Degree/Cert: " + otherDegree;
-    field71 = "Did you graduate from other ? " + radioValue9;
+        field66 = "Other: " + other;
+        field67 = "Address: " + otherAddress;
+        field68 = "From: " + otherFrom;
+        field69 = "To: " + otherTo;
+        field70 = "Degree/Cert: " + otherDegree;
+        field71 = "Did you graduate from other ? " + radioValue9;
 
 
 
         // references
         // ref 1
-    field72 = "Name: " + ref1;
-    field73 = "Relationship: " + ref1Rel;
-    field74 = "Company: " + ref1Company;
-    field75 = "Phone: " + ref1Phone;
-    field76 = "Address: " + ref1Address;
+        field72 = "Name: " + ref1;
+        field73 = "Relationship: " + ref1Rel;
+        field74 = "Company: " + ref1Company;
+        field75 = "Phone: " + ref1Phone;
+        field76 = "Address: " + ref1Address;
         // ref 2
-    field77 = "Name: " + ref2;
-    field78 = "Relationship: " + ref2Rel;
-    field79 = "Company: " + ref2Company;
-    field80 = "Phone: " + ref2Phone;
-    field81 = "Address: " + ref2Address;
+        field77 = "Name: " + ref2;
+        field78 = "Relationship: " + ref2Rel;
+        field79 = "Company: " + ref2Company;
+        field80 = "Phone: " + ref2Phone;
+        field81 = "Address: " + ref2Address;
         // ref 3
-    field82 = "Name: " + ref3;
-    field83 = "Relationship: " + ref3Rel;
-    field84 = "Company: " + ref3Company;
-    field85 = "Phone: " + ref3Phone;
-    field86 = "Address: " + ref3Address;
+        field82 = "Name: " + ref3;
+        field83 = "Relationship: " + ref3Rel;
+        field84 = "Company: " + ref3Company;
+        field85 = "Phone: " + ref3Phone;
+        field86 = "Address: " + ref3Address;
 
 
-    field87 = "discloser " + radioValue10;
+        field87 = "discloser " + radioValue10;
 
 
         firebase.database().ref('applicant').push({
-        field1,field2,field3, field4,field5,field6,field7,field8,field9,field10,field11,field12,field13,field14,field15,
-        field16,field17,field18,field19,field20,field21,field22,field23,field24,field25,field26,field27,field28,field29,field30,field31,field32,field33,field34,field35,field36,field37,field38,field39,field40,field41,field42,field43,field44,field45,field46,field47,field48,field49,field50,field51,field52,field53,field54,field55,field56,field57,field58,field59,field60,field61,field62,field63,field64,field65,field66,field67,field68,field69,field70,field71,field72,field73,field74,field75,field76,field77,field78,field79,field80,field81,field82,field83,field84,field85,field86,field87,
-            
+            field1,
+            field2,
+            field3,
+            field4,
+            field5,
+            field6,
+            field7,
+            field8,
+            field9,
+            field10,
+            field11,
+            field12,
+            field13,
+            field14,
+            field15,
+            field16,
+            field17,
+            field18,
+            field19,
+            field20,
+            field21,
+            field22,
+            field23,
+            field24,
+            field25,
+            field26,
+            field27,
+            field28,
+            field29,
+            field30,
+            field31,
+            field32,
+            field33,
+            field34,
+            field35,
+            field36,
+            field37,
+            field38,
+            field39,
+            field40,
+            field41,
+            field42,
+            field43,
+            field44,
+            field45,
+            field46,
+            field47,
+            field48,
+            field49,
+            field50,
+            field51,
+            field52,
+            field53,
+            field54,
+            field55,
+            field56,
+            field57,
+            field58,
+            field59,
+            field60,
+            field61,
+            field62,
+            field63,
+            field64,
+            field65,
+            field66,
+            field67,
+            field68,
+            field69,
+            field70,
+            field71,
+            field72,
+            field73,
+            field74,
+            field75,
+            field76,
+            field77,
+            field78,
+            field79,
+            field80,
+            field81,
+            field82,
+            field83,
+            field84,
+            field85,
+            field86,
+            field87,
+
         });
 
-       document.getElementById("test").reset();
-      
-    $(".alert").fadeTo(1000, 1.0).delay(3000);
-    $(".alert").fadeTo(1000, 0.0);
+        document.getElementById("test").reset();
+
+        $(".alert").fadeTo(1000, 1.0).delay(3000);
+        $(".alert").fadeTo(1000, 0.0);
 
 
 
@@ -436,220 +526,341 @@ $(document).ready(function() {
 
             // starts here
             var ref2 = database.ref('applicant');
-    ref2.on('value', gotData2);
+            ref2.on('value', gotData2);
 
 
-    function gotData2(data) {
+            function gotData2(data) {
 
-        $(".printApps").html('');
-        var person = data.val();
-        var keys = Object.keys(person);
-        for (var i = 0; i < keys.length; i++) {
-            var k = keys[i];
-            newKey = keys[i];
+                $(".printApps").html('');
+                var person = data.val();
+                var keys = Object.keys(person);
+                for (var i = 0; i < keys.length; i++) {
+                    var k = keys[i];
+                    newKey = keys[i];
 
-             var persons = {
-                one: person[k].field1,
-                two: person[k].field2,
-                three: person[k].field3,
-                four: person[k].field4,
-                five: person[k].field5,
-                six: person[k].field6,
-                seven: person[k].field7,
-                eight: person[k].field8,
-                nine: person[k].field9,
-                ten: person[k].field10,
-                eleven: person[k].field11,
-                twelve: person[k].field12,
-                thirteen: person[k].field13,
-                fourteen: person[k].field14,
-                fifteen: person[k].field15,
-                sixteen: person[k].field16,
-                seventeen: person[k].field17,
-                eighteen: person[k].field18,
-                ninteen: person[k].field19,
-                twenty: person[k].field20,
-                twentyOne: person[k].field21,
-                twentyTwo: person[k].field22,
-                twentyThree: person[k].field23,
-                twentyfour: person[k].field24,
-                twentyfive: person[k].field25,
-                twentysix: person[k].field26,
-                twentyseven: person[k].field27,
-                twentyeight: person[k].field28,
-                twentynine: person[k].field29,
-                thirty: person[k].field30,
-                thirtyOne: person[k].field31,
-                thirtyTwo: person[k].field32,
-                thirtyThree: person[k].field33,
-                thirtyFour: person[k].field34,
-                thirtyFive: person[k].field35,
-                thirtySix: person[k].field36,
-                thirtySeven: person[k].field37,
-                thirtyEight: person[k].field38,
-                thirtyNine: person[k].field39,
-                fourty: person[k].field40,
-                fourtyOne: person[k].field41,
-                fourtyTwo: person[k].field42,
-                fourtyThree: person[k].field44,
-                fourtyFour: person[k].field44,
-                fourtyFive: person[k].field45,
-                fourtySix: person[k].field46,
-                fourtySeven: person[k].field47,
-                fourtyEight: person[k].field48,
-                fourtyNine: person[k].field49,
-                fifty: person[k].field50,
-                fiftyOne: person[k].field51,
-                fiftyTwo: person[k].field52,
-                fiftyThree: person[k].field55,
-                fiftyFour: person[k].field54,
-                fiftyFive: person[k].field55,
-                fiftySix: person[k].field56,
-                fiftySeven: person[k].field57,
-                fiftyEight: person[k].field58,
-                fiftyNine: person[k].field59,
-                sixty: person[k].field60,
-                sixtyOne: person[k].field61,
-                sixtyTwo: person[k].field62,
-                sixtyThree: person[k].field66,
-                sixtyFour: person[k].field64,
-                sixtyFive: person[k].field65,
-                sixtySix: person[k].field66,
-                sixtySeven: person[k].field67,
-                sixtyEight: person[k].field68,
-                sixtyNine: person[k].field69,
-                seventy: person[k].field70,
-                seventyOne: person[k].field71,
-                seventyTwo: person[k].field72,
-                seventyThree: person[k].field77,
-                seventyFour: person[k].field74,
-                seventyFive: person[k].field75,
-                seventySix: person[k].field76,
-                seventySeven: person[k].field77,
-                seventyEight: person[k].field78,
-                seventyNine: person[k].field79,
-                eighty: person[k].field80,
-                eightyOne: person[k].field81,
-                eightyTwo: person[k].field82,
-                eightyThree: person[k].field88,
-                eightyFour: person[k].field84,
-                eightyFive: person[k].field85,
-                eightySix: person[k].field86,
-                eightySeven: person[k].field87,
-               
-                
+                    var persons = {
+                        one: person[k].field1,
+                        two: person[k].field2,
+                        three: person[k].field3,
+                        four: person[k].field4,
+                        five: person[k].field5,
+                        six: person[k].field6,
+                        seven: person[k].field7,
+                        eight: person[k].field8,
+                        nine: person[k].field9,
+                        ten: person[k].field10,
+                        eleven: person[k].field11,
+                        twelve: person[k].field12,
+                        thirteen: person[k].field13,
+                        fourteen: person[k].field14,
+                        fifteen: person[k].field15,
+                        sixteen: person[k].field16,
+                        seventeen: person[k].field17,
+                        eighteen: person[k].field18,
+                        ninteen: person[k].field19,
+                        twenty: person[k].field20,
+                        twentyOne: person[k].field21,
+                        twentyTwo: person[k].field22,
+                        twentyThree: person[k].field23,
+                        twentyfour: person[k].field24,
+                        twentyfive: person[k].field25,
+                        twentysix: person[k].field26,
+                        twentyseven: person[k].field27,
+                        twentyeight: person[k].field28,
+                        twentynine: person[k].field29,
+                        thirty: person[k].field30,
+                        thirtyOne: person[k].field31,
+                        thirtyTwo: person[k].field32,
+                        thirtyThree: person[k].field33,
+                        thirtyFour: person[k].field34,
+                        thirtyFive: person[k].field35,
+                        thirtySix: person[k].field36,
+                        thirtySeven: person[k].field37,
+                        thirtyEight: person[k].field38,
+                        thirtyNine: person[k].field39,
+                        fourty: person[k].field40,
+                        fourtyOne: person[k].field41,
+                        fourtyTwo: person[k].field42,
+                        fourtyThree: person[k].field44,
+                        fourtyFour: person[k].field44,
+                        fourtyFive: person[k].field45,
+                        fourtySix: person[k].field46,
+                        fourtySeven: person[k].field47,
+                        fourtyEight: person[k].field48,
+                        fourtyNine: person[k].field49,
+                        fifty: person[k].field50,
+                        fiftyOne: person[k].field51,
+                        fiftyTwo: person[k].field52,
+                        fiftyThree: person[k].field55,
+                        fiftyFour: person[k].field54,
+                        fiftyFive: person[k].field55,
+                        fiftySix: person[k].field56,
+                        fiftySeven: person[k].field57,
+                        fiftyEight: person[k].field58,
+                        fiftyNine: person[k].field59,
+                        sixty: person[k].field60,
+                        sixtyOne: person[k].field61,
+                        sixtyTwo: person[k].field62,
+                        sixtyThree: person[k].field66,
+                        sixtyFour: person[k].field64,
+                        sixtyFive: person[k].field65,
+                        sixtySix: person[k].field66,
+                        sixtySeven: person[k].field67,
+                        sixtyEight: person[k].field68,
+                        sixtyNine: person[k].field69,
+                        seventy: person[k].field70,
+                        seventyOne: person[k].field71,
+                        seventyTwo: person[k].field72,
+                        seventyThree: person[k].field77,
+                        seventyFour: person[k].field74,
+                        seventyFive: person[k].field75,
+                        seventySix: person[k].field76,
+                        seventySeven: person[k].field77,
+                        seventyEight: person[k].field78,
+                        seventyNine: person[k].field79,
+                        eighty: person[k].field80,
+                        eightyOne: person[k].field81,
+                        eightyTwo: person[k].field82,
+                        eightyThree: person[k].field88,
+                        eightyFour: person[k].field84,
+                        eightyFive: person[k].field85,
+                        eightySix: person[k].field86,
+                        eightySeven: person[k].field87,
+
+
+                    }
+
+
+                    console.log(person[k].feild1);
+
+
+
+                    newKey = keys[i];
+                    console.log(newKey);
+
+
+
+
+                    $(".printApps").append("<div class='appDiv' id=" + newKey + ">" +
+
+                        "<p>" + persons.one + "<br>" + persons.two + "<br>" + persons.three + "<br>" +
+                        "<br>" + persons.four + "<br>" + persons.five + "<br>" + persons.six + "</br>" +
+                        "<br>" + persons.seven + "<br>" + persons.eight + "<br>" + persons.nine + "<br>" +
+                        "<br>" + persons.ten + "<br>" + persons.eleven + "<br>" + persons.twelve + "<br>" +
+                        "<br>" + persons.thirteen + "<br>" + persons.fourteen + "<br>" + persons.fifteen +
+                        "<br>" + persons.sixteen + "<br>" + persons.seventeen + "<br>" + persons.eighteen +
+                        "<br>" + persons.ninteen + "<br>" + persons.twenty + "<br>" + persons.twentyOne + "</br>" +
+                        "<br>" + persons.twentyTwo + "<br>" + persons.twentyThree + "<br>" + persons.twentyfour + "<br>" +
+                        "<br>" + persons.twentyfive + "<br>" + persons.twentysix + "<br>" + persons.twentyseven + "<br>" +
+                        "<br>" + persons.twentyeight + "<br>" + persons.twentynine + "<br>" + persons.thirty +
+                        "<br>" + persons.thirtyOne + "<br>" + persons.thirtyTwo + "<br>" + persons.thirtyThree +
+                        "<br>" + persons.thirtyFour + "<br>" + persons.thirtyFive + "<br>" + persons.thirtySix +
+                        "<br>" + persons.thirtySeven + "<br>" + persons.thirtyEight + "<br>" + persons.thirtyNine +
+                        "<br>" + persons.fourty +
+                        "<br>" + persons.fourtyOne + "<br>" + persons.fourtyTwo + "<br>" + persons.fourtyThree +
+                        "<br>" + persons.fourtyFour + "<br>" + persons.fourtyFive + "<br>" + persons.fourtySix +
+                        "<br>" + persons.fourtySeven + "<br>" + persons.fourtyEight + "<br>" + persons.fourtyNine +
+                        "<br>" + persons.fifty +
+                        "<br>" + persons.fiftyOne + "<br>" + persons.fiftyTwo + "<br>" + persons.fiftyThree +
+                        "<br>" + persons.fiftyFour + "<br>" + persons.fiftyFive + "<br>" + persons.fiftySix +
+                        "<br>" + persons.fiftySeven + "<br>" + persons.fiftyEight + "<br>" + persons.fiftyNine +
+                        "<br>" + persons.sixty +
+                        "<br>" + persons.sixtyOne + "<br>" + persons.sixtyTwo + "<br>" + persons.sixtyThree +
+                        "<br>" + persons.sixtyFour + "<br>" + persons.sixtyFive + "<br>" + persons.sixtySix +
+                        "<br>" + persons.sixtySeven + "<br>" + persons.sixtyEight + "<br>" + persons.sixtyNine +
+                        "<br>" + persons.seventy +
+                        "<br>" + persons.seventyOne + "<br>" + persons.seventyTwo + "<br>" + persons.seventyThree +
+                        "<br>" + persons.seventyFour + "<br>" + persons.seventyFive + "<br>" + persons.seventySix +
+                        "<br>" + persons.seventySeven + "<br>" + persons.seventyEight + "<br>" + persons.seventyNine +
+                        "<br>" + persons.eighty +
+                        "<br>" + persons.eightyOne + "<br>" + persons.eightyTwo + "<br>" + persons.eightyThree +
+                        "<br>" + persons.eightyFour + "<br>" + persons.eightyFive + "<br>" + persons.eightySix +
+                        "<br>" + persons.eightySeven + "<br>" +
+
+
+
+
+                        "</p>" +
+                        "<button class='btn btn-info printApp' value=" + newKey + ">" + "Print" + "</button>" +
+
+                        "<button class='btn btn-danger deleteApp' value=" + newKey + ">" + "Delete" + "</button>" +
+
+
+
+                        "</div>"
+
+
+
+
+                    );
+
+
+                }
             }
 
-            
-            console.log(person[k].feild1);
+            $("#my-form").on('submit', event => {
+                event.preventDefault();
 
-            
-
-            newKey = keys[i];
-            console.log(newKey);
-            
-           
-
-
-            $(".printApps").append( "<div class='appDiv' id=" + newKey + ">" + 
-
-                                    "<p>" + persons.one + "<br>" +  persons.two + "<br>" + persons.three +  "<br>" + 
-                                    "<br>" + persons.four + "<br>" +  persons.five + "<br>" + persons.six +  "</br>" + 
-                                    "<br>" + persons.seven + "<br>" +  persons.eight + "<br>" + persons.nine +  "<br>" +
-                                    "<br>" + persons.ten + "<br>" +  persons.eleven + "<br>" + persons.twelve +  "<br>" +
-                                    "<br>" + persons.thirteen + "<br>" +  persons.fourteen + "<br>" + persons.fifteen + 
-                                    "<br>" + persons.sixteen + "<br>" +  persons.seventeen + "<br>" + persons.eighteen + 
-                                    "<br>" + persons.ninteen + "<br>" +  persons.twenty + "<br>" + persons.twentyOne +  "</br>" + 
-                                    "<br>" + persons.twentyTwo + "<br>" +  persons.twentyThree + "<br>" + persons.twentyfour +  "<br>" +
-                                    "<br>" + persons.twentyfive + "<br>" +  persons.twentysix + "<br>" + persons.twentyseven +  "<br>" +
-                                    "<br>" + persons.twentyeight + "<br>" +  persons.twentynine + "<br>" + persons.thirty + 
-                                    "<br>" + persons.thirtyOne + "<br>" +  persons.thirtyTwo + "<br>" + persons.thirtyThree + 
-                                    "<br>" + persons.thirtyFour + "<br>" +  persons.thirtyFive + "<br>" + persons.thirtySix + 
-                                    "<br>" + persons.thirtySeven + "<br>" +  persons.thirtyEight + "<br>" + persons.thirtyNine + 
-                                    "<br>" + persons.fourty + 
-                                    "<br>" + persons.fourtyOne + "<br>" +  persons.fourtyTwo + "<br>" + persons.fourtyThree + 
-                                    "<br>" + persons.fourtyFour + "<br>" +  persons.fourtyFive + "<br>" + persons.fourtySix + 
-                                    "<br>" + persons.fourtySeven + "<br>" +  persons.fourtyEight + "<br>" + persons.fourtyNine + 
-                                    "<br>" + persons.fifty + 
-                                    "<br>" + persons.fiftyOne + "<br>" +  persons.fiftyTwo + "<br>" + persons.fiftyThree + 
-                                    "<br>" + persons.fiftyFour + "<br>" +  persons.fiftyFive + "<br>" + persons.fiftySix + 
-                                    "<br>" + persons.fiftySeven + "<br>" +  persons.fiftyEight + "<br>" + persons.fiftyNine + 
-                                    "<br>" + persons.sixty + 
-                                    "<br>" + persons.sixtyOne + "<br>" +  persons.sixtyTwo + "<br>" + persons.sixtyThree + 
-                                    "<br>" + persons.sixtyFour + "<br>" +  persons.sixtyFive + "<br>" + persons.sixtySix + 
-                                    "<br>" + persons.sixtySeven + "<br>" +  persons.sixtyEight + "<br>" + persons.sixtyNine + 
-                                    "<br>" + persons.seventy + 
-                                    "<br>" + persons.seventyOne + "<br>" +  persons.seventyTwo + "<br>" + persons.seventyThree + 
-                                    "<br>" + persons.seventyFour + "<br>" +  persons.seventyFive + "<br>" + persons.seventySix + 
-                                    "<br>" + persons.seventySeven + "<br>" +  persons.seventyEight + "<br>" + persons.seventyNine + 
-                                    "<br>" + persons.eighty + 
-                                    "<br>" + persons.eightyOne + "<br>" +  persons.eightyTwo + "<br>" + persons.eightyThree + 
-                                    "<br>" + persons.eightyFour + "<br>" +  persons.eightyFive + "<br>" + persons.eightySix + 
-                                    "<br>" + persons.eightySeven + "<br>" + 
+                var firstname = $("#firstname").val().trim();
+                var lastname = $("#lastname").val().trim();
+                var phonenumber = $("#phonenumber").val().trim();
+                var email = $("#email").val().trim();
+                var messages = $("#messages").val().trim();
+                firebase.database().ref('client').push({
+                    firstname,
+                    lastname,
+                    phonenumber,
+                    email,
+                    messages
 
 
-                                     
-
-                                      "</p>" + 
-                                      "<button class='btn btn-info printApp' value="+ newKey + ">" + "Print" + "</button>" + 
-
-                                      "<button class='btn btn-danger deleteApp' value=" + newKey + ">" + "Delete" + "</button>" + 
+                });
+                 $(".alert").fadeTo(500, 1.0).delay(3000);
+                $(".alert").fadeTo(1000, 0.0);
+                document.getElementById("my-form").reset();
 
 
 
-                                       "</div>" 
-
-                                   
+            });
 
 
-                );
-               
+            // Printing Client messages
 
-        }
-    }
+            var ref3 = database.ref('client');
+            ref3.on('value', gotData3);
 
-   
- $(".printApps").on('click', '.printApp', function(){ 
-    appId = $(this).val()
-          
-               console.log($(this).val());
 
-               function PrintElem(elem)
-{
-    var mywindow = window.open('', 'PRINT', 'height=400,width=600');
+            function gotData3(data) {
+                var client = data.val();
+                var keys = Object.keys(client);
+                for (var i = 0; i < keys.length; i++) {
+                    var k = keys[i];
+                    newKey = keys[i];
 
-    mywindow.document.write('<html><head><title>' + document.title  + '</title>');
-    mywindow.document.write('</head><body >');
-    mywindow.document.write('<h1>' + document.title  + '</h1>');
-    mywindow.document.write(document.getElementById(appId).innerHTML);
-    mywindow.document.write('</body></html>');
 
-   
-    mywindow.print();
-    mywindow.close();
+                    var clients = {
+                        one: client[k].firstname,
+                        two: client[k].lastname,
+                        three: client[k].phonenumber,
+                        four: client[k].email,
+                        five: client[k].messages
 
-    return true;
-}
+                    }
+                    $(".printClients").append("<div class='appDiv' id=" + newKey + ">" +
 
-PrintElem();
+                        "<p>" + clients.one + "<br>" + clients.two + "<br>" + clients.three + "<br>" +
+                        "<br>" + clients.four + "<br>" + clients.five +
+
+                        "</p>" +
+                        "<button class='btn btn-info printClient' value=" + newKey + ">" + "Print" + "</button>" +
+
+                        "<button class='btn btn-danger deleteClients' value=" + newKey + ">" + "Delete" + "</button>" +
+
+
+
+                        "</div>"
+
+
+
+
+                    );
+
+
+                }
+
+
+
+
+            };
+
+            //Printing client messages
+
+            $(".printClients").on('click', '.printClient', function() {
+                appId = $(this).val()
+
+                console.log($(this).val());
+
+                function PrintElem(elem) {
+                    var mywindow = window.open('', 'PRINT', 'height=400,width=600');
+
+                    mywindow.document.write('<html><head><title>' + document.title + '</title>');
+                    mywindow.document.write('</head><body >');
+                    mywindow.document.write('<h1>' + document.title + '</h1>');
+                    mywindow.document.write(document.getElementById(appId).innerHTML);
+                    mywindow.document.write('</body></html>');
+
+
+                    mywindow.print();
+                    mywindow.close();
+
+                    return true;
+                }
+
+                PrintElem();
 
 
 
 
             });
 
-$(".printApps").on('click', '.deleteApp', function(){
+            //Deleting client messages
 
-    $('.printApps').html('');
-        
-        var deleteRef = firebase.database().ref('applicant').child(this.value);
-        deleteRef.remove();
+            $(".printClients").on('click', '.deleteClients', function() {
+
+                $('.printClients').html('');
+
+                var deleteRef = firebase.database().ref('client').child(this.value);
+                deleteRef.remove();
 
 
 
-});
+            });
 
- 
+
+
+
+            // Printing Applications
+
+            $(".printApps").on('click', '.printApp', function() {
+                appId = $(this).val()
+
+                console.log($(this).val());
+
+                function PrintElem(elem) {
+                    var mywindow = window.open('', 'PRINT', 'height=400,width=600');
+
+                    mywindow.document.write('<html><head><title>' + document.title + '</title>');
+                    mywindow.document.write('</head><body >');
+                    mywindow.document.write('<h1>' + document.title + '</h1>');
+                    mywindow.document.write(document.getElementById(appId).innerHTML);
+                    mywindow.document.write('</body></html>');
+
+
+                    mywindow.print();
+                    mywindow.close();
+
+                    return true;
+                }
+
+                PrintElem();
+
+
+
+
+            });
+
+            $(".printApps").on('click', '.deleteApp', function() {
+
+                $('.printApps').html('');
+
+                var deleteRef = firebase.database().ref('applicant').child(this.value);
+                deleteRef.remove();
+
+
+
+            });
+
+
             $(".printUsers").show();
 
             $(".addPosition").show();

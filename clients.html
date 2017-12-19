@@ -12,16 +12,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-   
     <link rel="stylesheet" href="assets/css/ebs-contact-form.css">
-   
     <link rel="stylesheet" href="assets/css/features-with-waves-effect.css">
     <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arsenal">
-    
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arsenal">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -37,14 +33,13 @@
                         <li class="printUsers" style="font-family: Arsenal, sans-serif;" role="presentation"><a href="printapps.html">Print Applications</a></li>
                         <li class="addPosition" style="font-family: Arsenal, sans-serif;" role="presentation"><a href="admin.html">Add/Remove Positions</a></li>
                         <li class="try" style="font-family: Arsenal, sans-serif;" role="presentation"><a href="positions.html">Open positions</a></li>
-                        <li  style="font-family: Arsenal, sans-serif;" role="presentation"><a href="clients.html">Clients </a></li>
+                        <li style="font-family: Arsenal, sans-serif;" role="presentation"><a href="clients.html">Clients </a></li>
                         <li style="font-family: Arsenal, sans-serif;" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" data-toggle='modal' data-target='#modal'>Login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
- 
     <div class="container" id="info-container">
         <div class="row">
             <div class="col-md-12">
@@ -75,16 +70,19 @@ Bettendorf, Iowa
                         <input class="form-control" type="text" name="email" required="" placeholder="Email" id="email"><i class="form-control-feedback fa fa-envelope" aria-hidden="true"></i></div>
                     <div class="form-group has-feedback">
                         <label class="control-label sr-only" for="messages">Last Name</label>
-                        <textarea class="form-control" rows="8" name="messages" required="" placeholder="Message"></textarea><i class="form-control-feedback fa fa-pencil" aria-hidden="true"></i></div>
+                        <textarea class="form-control" rows="8" name="messages" required="" placeholder="Message" id="messages"></textarea><i class="form-control-feedback fa fa-pencil" aria-hidden="true"></i></div>
                     <button class="btn btn-info" type="submit" id="form-btn">SEND </button>
                 </form>
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Success!</strong> Your information was submitted successfully!
+                </div>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
-</div>
-
-   <div class="footer-clean">
+    </div>
+    <div class="footer-clean">
         <footer>
             <div class="container">
                 <div class="row">
@@ -96,7 +94,6 @@ Bettendorf, Iowa
                             <li><a href="#">Bussiness insight</a></li>
                         </ul>
                     </div>
-                   
                     <div class="col-md-3 col-sm-6 item">
                         <h3>Careers</h3>
                         <ul>
@@ -107,35 +104,30 @@ Bettendorf, Iowa
                     </div>
                     <div class="col-md-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
                         <p class="copyright">Quality Control Staffing © 2017 </p>
-                        
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-                    <!-- modal -->
-
-
-        <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                        <p class="text-center"><i class="ion-ios-locked-outline"></i></p>
-                    </div>
-                            <form>
-                       
+    <!-- modal -->
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <p class="text-center"><i class="ion-ios-locked-outline"></i></p>
+                </div>
+                <form>
                     <div class="modal-body">
-                        
                         <input type="email" required="" placeholder="Email" id="txtEmail" style="">
                         <input type="password" placeholder="Password" id="txtPassword" ">
                     </div>
                         </form>
-                    <div class="modal-bottom text-center">
-                       <!--  <button class="btn btn-default" type="button" data-dismiss="modal">Close</button> -->
-                        <button class="btn btn-success" type="button" id="btnLogin">Login </button>
+                    <div class="modal-bottom text-center ">
+                       <!--  <button class="btn btn-default " type="button " data-dismiss="modal ">Close</button> -->
+                        <button class="btn btn-success " type="button " id="btnLogin ">Login </button>
                         
-                        <p class="pwdIncorrect">Incorrect Username/Password</p>
+                        <p class="pwdIncorrect ">Incorrect Username/Password</p>
                         
                     </div>
                 </div>
@@ -150,12 +142,12 @@ Bettendorf, Iowa
  
 
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js "></script>
     
-    <script src="assets/js/firebase.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/firebase.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js "></script>
    
 </body>
 
