@@ -529,7 +529,7 @@ $(document).ready(function() {
 
 
                 });
-                 $(".alert").fadeTo(500, 1.0).delay(3000);
+                 $(".alert").fadeTo(1000, 1.0).delay(3000);
                 $(".alert").fadeTo(1000, 0.0);
                 document.getElementById("my-form").reset();
 
