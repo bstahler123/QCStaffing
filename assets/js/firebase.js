@@ -407,6 +407,13 @@ $(document).ready(function() {
             
         });
 
+       document.getElementById("test").reset();
+      
+    $(".alert").fadeTo(1000, 1.0).delay(3000);
+    $(".alert").fadeTo(1000, 0.0);
+
+
+
 
 
 
@@ -586,7 +593,7 @@ $(document).ready(function() {
                                       "</p>" + 
                                       "<button class='btn btn-info printApp' value="+ newKey + ">" + "Print" + "</button>" + 
 
-                                      "<button class='btn btn-danger deleteApp'>" + "Delete" + "</button>" + 
+                                      "<button class='btn btn-danger deleteApp' value=" + newKey + ">" + "Delete" + "</button>" + 
 
 
 
@@ -630,6 +637,17 @@ PrintElem();
 
 
             });
+
+$(".printApps").on('click', '.deleteApp', function(){
+
+    $('.printApps').html('');
+        
+        var deleteRef = firebase.database().ref('applicant').child(this.value);
+        deleteRef.remove();
+
+
+
+});
 
  
             $(".printUsers").show();

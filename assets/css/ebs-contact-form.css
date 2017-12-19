@@ -42,14 +42,7 @@ div.site-form {
   padding-top:10px;
 }
 
-button#form-btn {
-  border-radius:0;
-  width:30%;
-  height:40px;
-  font-size:1em;
-  background:#00aeef;
-  color: white;
-}
+
 
 form#my-form {
   padding-bottom:20px;

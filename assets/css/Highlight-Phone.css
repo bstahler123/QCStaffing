@@ -25,12 +25,21 @@
   color:inherit;
   font-family: Arsenal, sans-serif;
 }
+.omgThisShit {
+  margin-right: 50px;
+}
 
 .highlight-phone .intro {
   font-size:18px;
   max-width:500px;
   line-height:1.5;
   color: rgb(63,180,208);
+
+}
+
+.introMargin {
+
+ 
 }
 
 @media (max-width:767px) {
