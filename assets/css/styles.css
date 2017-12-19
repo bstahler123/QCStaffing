@@ -116,13 +116,14 @@ h3 {
 }
 
 #positionTitle {
-    border: 1px solid black;
+    border: 1px solid rgb(63, 180, 208);
     width: 200px;
   
 }
 #positionDetails{
     width: 200px;
     height: 75px;
+    border: 1px solid rgb(63, 180, 208);
 
 
 }
