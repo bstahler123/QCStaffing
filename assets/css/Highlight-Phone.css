@@ -64,6 +64,9 @@
   line-height:1;
   font-family: Arsenal, sans-serif;
 }
+.employerHeader{
+  color: rgba(0,0,0,0.7);
+}
 
 .highlight-phone .intro .btn:hover {
   opacity:1;
@@ -88,6 +91,7 @@
   background-color:rgba(63,180,208, 0.5);
    border-top: 1px solid rgba(63,180, 208, 0.5);
    font-family: Arsenal, sans-serif;
+
    
 }
 
