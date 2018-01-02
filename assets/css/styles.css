@@ -45,7 +45,7 @@ header.masthead {
   text-align: center;
   color: white;
   background-attachment: fixed;
-   background: linear-gradient( rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url(../img/pointing.jpg);
+   background: linear-gradient( rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url(../assets/img/pointing.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
