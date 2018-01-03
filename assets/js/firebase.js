@@ -71,7 +71,7 @@ $('#fileButton').on('click', function(){
     var fileButton = document.getElementById('fileButton');
 
     // Listen for file selection
-    
+
     fileButton.addEventListener('change', function(e) {
         // Get file
         var file = e.target.files[0];
@@ -98,6 +98,7 @@ $('#fileButton').on('click', function(){
             },
 
             function complete() {
+                alert("Yay file uploaded!")
 
             }
 
