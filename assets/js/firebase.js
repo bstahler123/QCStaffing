@@ -12,7 +12,7 @@ $(document).ready(function() {
         authDomain: "my-website-c5c41.firebaseapp.com",
         databaseURL: "https://my-website-c5c41.firebaseio.com",
         projectId: "my-website-c5c41",
-        storageBucket: "my-website-c5c41.appspot.com",
+        storageBucket: "gs://my-website-c5c41.appspot.com",
         messagingSenderId: "974593829471"
     };
 
