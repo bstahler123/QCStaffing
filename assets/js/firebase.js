@@ -64,51 +64,54 @@ $(document).ready(function() {
 
 
     //resmue uploader
-$('#fileButton').on('click', function(){ 
-   
-    // Get elements
-    var uploader = document.getElementById('uploader');
-    var fileButton = document.getElementById('fileButton');
+    $('#fileButton').on('click', function() {
 
-    // Listen for file selection
-
-    fileButton.addEventListener('change', function(e) {
-        // Get file
-        var file = e.target.files[0];
+        // Get elements
+        var uploader = document.getElementById('uploader');
+        var fileButton = document.getElementById('fileButton');
 
 
-        // Create a storage ref
-        var storageRef = firebase.storage().ref('sweet_gifs/' + file.name);
 
-        // Upload file
-        var task = storageRef.put(file);
+        // Listen for file selection
+
+        fileButton.addEventListener('change', function(e) {
+            // Get file
+            var file = e.target.files[0];
 
 
-        // Upload progress bar
-        task.on('state_changed',
+            // Create a storage ref
+            var storageRef = firebase.storage().ref('sweet_gifs/' + file.name);
 
-            function progress(snapshot) {
-                var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                uploader.value = percentage;
+            // Upload file
+            var task = storageRef.put(file);
 
-            },
 
-            function error(err) {
+            // Upload progress bar
+            task.on('state_changed',
 
-            },
+                function progress(snapshot) {
+                    var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    uploader.value = percentage;
 
-            function complete() {
-                alert("Yay file uploaded!");
-                uploader.value = 0;
+                },
 
-            }
+                function error(err) {
 
-        );
+                },
 
+                function complete() {
+                    $(".alert").fadeTo(300, 1.0).delay(3000);
+                    $(".alert").fadeTo(300, 0.0);
+                    uploader.value = 0;
+
+                }
+
+            );
+
+
+        });
 
     });
-
-});
 
 
 

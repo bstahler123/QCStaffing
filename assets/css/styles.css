@@ -27,6 +27,7 @@ padding-bottom: 200px;
   justify-content: center;
   flex-direction: column;
   background-color: lightgrey;
+  padding-top: 30px;
 }
 
 #uploader {
@@ -309,6 +310,8 @@ h4 {
 
 .alert {
     opacity: 0;
+    margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 
