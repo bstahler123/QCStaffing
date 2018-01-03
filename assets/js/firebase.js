@@ -12,7 +12,7 @@ $(document).ready(function() {
         authDomain: "my-website-c5c41.firebaseapp.com",
         databaseURL: "https://my-website-c5c41.firebaseio.com",
         projectId: "my-website-c5c41",
-        storageBucket: "",
+        storageBucket: "my-website-c5c41.appspot.com",
         messagingSenderId: "974593829471"
     };
 
@@ -59,6 +59,49 @@ $(document).ready(function() {
 
             $('.pwdIncorrect').removeClass('pwdIncorrect');
         });
+
+    });
+
+
+    //resmue uploader
+
+
+    // Get elements
+    var uploader = document.getElementById('uploader');
+    var fileButton = document.getElementById('fileButton');
+
+    // Listen for file selection
+    fileButton.addEventListener('change', function(e) {
+        // Get file
+        var file = e.target.files[0];
+
+
+        // Create a storage ref
+        var storageRef = firebase.storage().ref('sweet_gifs/' + file.name);
+
+        // Upload file
+        var task = storageRef.put(file);
+
+
+        // Upload progress bar
+        task.on('state_changed',
+
+            function progress(snapshot) {
+                var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                uploader.value = percentage;
+
+            },
+
+            function error(err) {
+
+            },
+
+            function complete() {
+
+            }
+
+        );
+
 
     });
 
@@ -512,31 +555,31 @@ $(document).ready(function() {
     });
 
 
-  $("#my-form").on('submit', event => {
-                event.preventDefault();
+    $("#my-form").on('submit', event => {
+        event.preventDefault();
 
-                var firstname = $("#firstname").val().trim();
-                var lastname = $("#lastname").val().trim();
-                var phonenumber = $("#phonenumber").val().trim();
-                var email = $("#email").val().trim();
-                var messages = $("#messages").val().trim();
-                firebase.database().ref('client').push({
-                    firstname,
-                    lastname,
-                    phonenumber,
-                    email,
-                    messages
-
-
-                });
-                
-                document.getElementById("my-form").reset();
-                 $(".alert").fadeTo(1000, 1.0).delay(3000);
-                $(".alert").fadeTo(1000, 0.0);
+        var firstname = $("#firstname").val().trim();
+        var lastname = $("#lastname").val().trim();
+        var phonenumber = $("#phonenumber").val().trim();
+        var email = $("#email").val().trim();
+        var messages = $("#messages").val().trim();
+        firebase.database().ref('client').push({
+            firstname,
+            lastname,
+            phonenumber,
+            email,
+            messages
 
 
+        });
 
-            });
+        document.getElementById("my-form").reset();
+        $(".alert").fadeTo(1000, 1.0).delay(3000);
+        $(".alert").fadeTo(1000, 0.0);
+
+
+
+    });
 
 
 
@@ -725,7 +768,7 @@ $(document).ready(function() {
                 }
             }
 
-         
+
 
 
             // Printing Client messages
