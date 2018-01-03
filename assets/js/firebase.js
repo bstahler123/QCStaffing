@@ -98,7 +98,7 @@ $('#fileButton').on('click', function(){
             },
 
             function complete() {
-                alert("Yay file uploaded!")
+                alert("Yay file uploaded!");
 
             }
 
