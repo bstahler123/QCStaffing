@@ -99,6 +99,7 @@ $('#fileButton').on('click', function(){
 
             function complete() {
                 alert("Yay file uploaded!");
+                uploader.value = 0;
 
             }
 

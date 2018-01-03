@@ -9,6 +9,10 @@ padding-bottom: 200px;
   background-color: white;
 }
 
+.appDivider {
+  padding: 20px;
+}
+
 .navbar-default .navbar-toggle .icon-bar{
   background-color: rgb(30, 155, 201);
 }
