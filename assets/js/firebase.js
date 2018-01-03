@@ -65,7 +65,7 @@ $(document).ready(function() {
 
     //resmue uploader
 
-   $('#fileButton').on('click', function(){
+   
     // Get elements
     var uploader = document.getElementById('uploader');
     var fileButton = document.getElementById('fileButton');
@@ -105,7 +105,7 @@ $(document).ready(function() {
 
     });
 
-});
+
 
 
 
