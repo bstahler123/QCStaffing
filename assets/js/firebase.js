@@ -35,6 +35,8 @@ $(document).ready(function() {
     const btnLogout = $('#btnLogout');
     var newKey;
     var newArray = [];
+    var new1 = 0;
+    var new2 = 0;
 
 
     // login button
@@ -155,6 +157,8 @@ $(document).ready(function() {
         var keys = Object.keys(post);
         for (var i = 0; i < keys.length; i++) {
             var k = keys[i];
+            
+           
             var posts = {
                 title: " " + post[k].title + " ",
                 details: " " + post[k].details,
@@ -163,6 +167,8 @@ $(document).ready(function() {
 
             newKey = keys[i];
 
+            $("#printApps").addClass('printAlert');
+            
             // formating the paragraphs, could not do it dynamically 
 
 
@@ -207,6 +213,8 @@ $(document).ready(function() {
             );
 
         }
+        
+
 
     }
     $(".clickHere").on("click", function() {
@@ -617,6 +625,7 @@ $(document).ready(function() {
                 for (var i = 0; i < keys.length; i++) {
                     var k = keys[i];
                     newKey = keys[i];
+                    new1 = i + 1;
 
                     var persons = {
                         one: person[k].field1,
@@ -776,6 +785,8 @@ $(document).ready(function() {
 
 
                 }
+
+                
             }
 
 
@@ -793,6 +804,7 @@ $(document).ready(function() {
                 for (var i = 0; i < keys.length; i++) {
                     var k = keys[i];
                     newKey = keys[i];
+                    new2 = i;
 
 
                     var clients = {
@@ -824,6 +836,10 @@ $(document).ready(function() {
 
 
                 }
+
+                $("#printApps").html("");
+                 $("#printApps").append(new1 + new2 + 1);
+                console.log(new1 + new2);
 
 
 
