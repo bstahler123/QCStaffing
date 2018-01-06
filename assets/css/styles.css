@@ -13,6 +13,17 @@
 
   
 }
+
+.navbar .brand, .navbar .nav > li > a:hover {
+    color: #CBC625;
+    text-shadow: none;
+}
+
+.navbar .brand, .navbar .nav > li > a:focus{
+  color: purple;
+}
+
+
 header.masthead .intro-text{
 padding-top: 250px;
 padding-bottom: 200px;
