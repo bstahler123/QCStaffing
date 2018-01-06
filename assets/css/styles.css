@@ -19,9 +19,7 @@
     text-shadow: none;
 }
 
-.navbar .brand, .navbar .nav > li > a:focus{
-  color: purple;
-}
+
 
 
 header.masthead .intro-text{
