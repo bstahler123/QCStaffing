@@ -473,6 +473,8 @@ p {
   @media only screen and (max-width: 767px){
     .printAlert{
     background-position: left;
+    margin-left: 10px;
+
 
     }
 
