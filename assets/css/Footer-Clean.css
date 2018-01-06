@@ -1,7 +1,7 @@
 .footer-clean {
   padding:50px 0;
-  background-color:#e8f4f9;
-  color: #2fafd9;
+  background-color: rgba(30, 155, 201, .9);
+  color: white;
   font-family: Arsenal, sans-serif;
 }
 
@@ -83,6 +83,6 @@
   margin-bottom:0;
   font-size:13px;
   opacity:0.6;
-  color: black;
+  color: white;
 }
 

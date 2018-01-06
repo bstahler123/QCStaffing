@@ -88,7 +88,7 @@
 }
 
 .highlight-phone.bottom-article {
-  background-color:rgba(63,180,208, 0.5);
+  background-color: white;
    border-top: 1px solid rgba(63,180, 208, 0.5);
    font-family: Arsenal, sans-serif;
 
@@ -97,7 +97,7 @@
 
 .highlight-phone.top-highlight {
   font-family: Arsenal, sans-serif;
-  background-color:#F9F8F8;
+  background-color: lightgrey;
   
  
 }
