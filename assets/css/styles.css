@@ -1,7 +1,17 @@
 .printAlert{
-  background-color: green;
-  
 
+  background-color: transparent;
+  background-image: url("../img/mail1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+#printApps{
+  color: black;
+  font-weight: bold;
+
+  
 }
 header.masthead .intro-text{
 padding-top: 250px;
@@ -460,6 +470,13 @@ p {
         font-size: 70px;
         font-family: 'PT Sans Narrow', sans-serif;
     }
+  @media only screen and (max-width: 767px){
+    .printAlert{
+    background-position: left;
+
+    }
+
+  }
 
 @media only screen and (max-width: 650px) {
      .carousel-caption > h1 {

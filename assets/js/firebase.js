@@ -838,7 +838,7 @@ $(document).ready(function() {
                 }
 
                 $("#printApps").html("");
-                 $("#printApps").append(new1 + new2 + 1);
+                 $("#printApps").append( + new1 + new2 + 1);
                 console.log(new1 + new2);
 
 
