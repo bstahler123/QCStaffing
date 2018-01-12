@@ -52,7 +52,7 @@ $(document).ready(function() {
 
     const txtEmail = $('#txtEmail');
     const txtPassword = $('#txtPassword');
-    const btnLogin = $('#btnLogin');
+    const btnLogin = $('.btnLogin');
     const btnLogout = $('#btnLogout');
     var newKey;
     var newArray = [];
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
     // login button
 
-    $("#btnLogin").on('click', e => {
+    $(".btnLogin").on('click', e => {
         const email = txtEmail.val();
         const pass = txtPassword.val();
         const auth = firebase.auth();

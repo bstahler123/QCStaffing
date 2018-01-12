@@ -52,7 +52,7 @@
 
 
 .navbar-fixed-top.scrolled {
-    background-color: rgba(244,244,244,0.9);
+    background-color: rgb(244,244,244);
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
@@ -98,6 +98,7 @@ header.masthead .intro-text {
 .navbar-toggle {
 
     background-color: white;
+    margin-top: 17px;
 }
 
 .appDivider {
@@ -163,7 +164,7 @@ header.masthead {
     text-align: center;
     color: white;
     background-attachment: fixed;
-    background: linear-gradient( rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url(../img/Pointing.jpg);
+    background: linear-gradient( rgba(1, 1, 1, 0.3), rgba(1, 1, 1, 0.3)), url(../img/Pointing.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -230,7 +231,7 @@ h3 {
 
 .row.add-job-input {
     padding: 20px;
-    background-color: rgba(63, 180, 208, 0.5);
+    background-color: rgb(238, 244, 247);
 }
 
 .add-job {
@@ -362,7 +363,7 @@ h4 {
 }
 
 
-#btnLogin {
+.btnLogin {
 
     font-size: 16px;
     width: 200px;
@@ -531,6 +532,12 @@ p {
         background-position: left;
         margin-left: 10px;
     }
+
+       .navbar-default .navbar-nav>li>a {
+        height: 50px;
+        padding-top: 12px;
+    }
+   
 }
 
 @media only screen and (max-width: 650px) {
@@ -539,9 +546,15 @@ p {
         font-family: 'PT Sans Narrow', sans-serif;
         font-weight: bold;
     }
+
+   
 }
 
 @media only screen and (max-width: 500px) {
+
+  
+
+     
 
 
 
