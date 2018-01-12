@@ -11,7 +11,7 @@
     font-weight: bold;
 }
 
-.navbar .brand,
+
 .navbar .nav>li>a:hover {
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
@@ -19,14 +19,15 @@
     transition: all .2s ease-in;
     color: black;
     text-shadow: none;
-    background-color: white; 
-    text-decoration: underline;
+    background-color: white;
+    
+  
 }
-/*.navbar-fixed-top .navbar-brand:hover {
-  color: black;
-  background-color: white;
+.navbar-fixed-top .navbar-brand:hover {
+  color: white;
+  
+}
 
-}*/
 
 
 
@@ -69,6 +70,7 @@
     background-color: rgb(30, 155, 201);
     color: white;
 }
+
 
 
 
@@ -193,14 +195,10 @@ header.masthead {
 }
 
 
-.navigation-clean {
-    color: white;
-    border-radius: 0;
-    box-shadow: none;
-}
+
 
 .navbar-default {
-    background-color: rgba(1, 120, 225, 0.8);
+    background-color: rgb(41, 41, 41);
     background-image: none;
     background-repeat: no-repeat;
     
