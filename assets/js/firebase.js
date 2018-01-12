@@ -16,15 +16,36 @@ $(document).ready(function() {
         messagingSenderId: "974593829471"
     };
 
-
-
-
-
-
-
-
     firebase.initializeApp(config);
     database = firebase.database();
+
+
+    // active page 
+
+    var url = window.location;
+        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+        $('ul.nav a').filter(function() {
+             return this.href == url;
+        }).parent().addClass('active');
+
+
+
+
+ 
+
+  $(function () {
+  $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
+
+
+
+
+
+
+
 
 
     // get elements

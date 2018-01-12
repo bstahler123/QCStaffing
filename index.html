@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-    
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -28,29 +27,22 @@
 </head>
 
 <body id="front-page">
-    
-        <nav class="navbar navbar-default navigation-clean navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html"><span style="text-decoration: underline; color: #CBC625;font-size: 28px; ">Q</span>aulity Controlled Staffing</a>
-                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                </div>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="printUsers" id="" style="    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-};" role="presentation"><a id="printApps" href="printapps.html"></a></li>
-                        <li class="addPosition" style="    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-};" role="presentation"><a href="admin.html">Add/Remove Positions</a></li>
-                        <li class="try" style="    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-};" role="presentation"><a href="positions.html">Open positions</a></li>
-                        <li style="    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-};" role="presentation"><a href="clients.html">Clients </a></li>
-                        <li style="    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-};" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" data-toggle='modal' data-target='#modal'>Login</a></li>
-                    </ul>
-                </div>
+    <nav  class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand nav-link" href="index.html"><span style="text-decoration: underline; color: #CBC625;font-size: 28px; ">Q</span>aulity Controlled Staffing</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
-        </nav>
-    
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="printUsers" role="presentation"><a  id="printApps" href="printapps.html" class="nav-link"></a></li>
+                    <li class="addPosition" role="presentation"><a  href="admin.html" class="nav-link">Add/Remove Positions</a></li>
+                    <li class="try" role="presentation"><a href="positions.html" class="nav-link">Open positions</a></li>
+                    <li role="presentation"><a href="clients.html" class="nav-link">Clients </a></li>
+                    <li class="" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" data-toggle='modal' data-target='#modal' class="nav-link">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header class="masthead">
         <div class="container">
             <div class="intro-text">
@@ -139,19 +131,17 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                         <p class="text-center"><i class="ion-ios-locked-outline"></i></p>
                     </div>
-                            <form>
-                       
-                    <div class="modal-body">
-                        
-                        <input type="email" required="" placeholder="Email" id="txtEmail" style="">
-                        <input type="password" placeholder="Password" id="txtPassword" ">
+                    <form>
+                        <div class="modal-body">
+                            <input type="email" required="" placeholder="Email" id="txtEmail" style="">
+                            <input type="password" placeholder="Password" id="txtPassword" ">
                     </div>
                         </form>
-                    <div class="modal-bottom text-center">
-                       <!--  <button class="btn btn-default" type="button" data-dismiss="modal">Close</button> -->
-                        <button class="btn btn-success" type="button" id="btnLogin">Login </button>
+                    <div class="modal-bottom text-center ">
+                       <!--  <button class="btn btn-default " type="button " data-dismiss="modal ">Close</button> -->
+                        <button class="btn btn-success " type="button " id="btnLogin ">Login </button>
                         
-                        <p class="pwdIncorrect">Incorrect Username/Password</p>
+                        <p class="pwdIncorrect ">Incorrect Username/Password</p>
                         
                     </div>
                 </div>
