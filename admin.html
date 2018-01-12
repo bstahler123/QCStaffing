@@ -35,16 +35,17 @@
  
        <nav  class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand" href="index.html"><span style="text-decoration: underline; color: rgb(30, 155, 201);font-size: 28px; ">Q</span>aulity Controlled Staffing</a>
+            <div class="navbar-header"><a class="navbar-brand" href="index.html"><span style="text-decoration: underline; color: rgb(30, 155, 201);font-size: 28px; ">Q</span>uality Controlled Staffing</a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="printUsers" role="presentation"><a  id="printApps" href="printapps.html"></a></li>
-                    <li class="addPosition" role="presentation"><a  href="admin.html" class="nav-link">Add/Remove Positions</a></li>
-                    <li class="try" role="presentation"><a href="positions.html" class="nav-link">Open positions</a></li>
+                    <li class="nav-link" role="presentation"><a href="index.html">Home</a></li>
+                    <li class="addPosition" role="presentation"><a  href="admin.html" class="nav-link">Add/Remove</a></li>
+                    <li class="try" role="presentation"><a href="positions.html" class="nav-link">Positions</a></li>
                     <li role="presentation"><a href="clients.html" class="nav-link">Clients </a></li>
-                    <li class="" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" data-toggle='modal' data-target='#modal' class="nav-link">Login</a></li>
+                    <li class="logButton" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" data-toggle='modal' data-target='#modal' class="nav-link">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -87,7 +88,7 @@
                         </form>
                     <div class="modal-bottom text-center">
                        <!--  <button class="btn btn-default" type="button" data-dismiss="modal">Close</button> -->
-                        <button class="btn btn-success btnLogin" type="button">Login </button>
+                        <button class="btn btn-info btnLogin" type="button">Login </button>
                         
                         <p class="pwdIncorrect">Incorrect Username/Password</p>
                         
@@ -110,7 +111,7 @@
             </div>
 
         
-        <a href='index.html' class="btn btn-default navbar-btn" type="button" id="btnLogout">Loggout</a>
+        <a href='index.html' class="btn btn-default navbar-btn btnLogout" type="button">Loggout</a>
     </div>
     <div class="footer-clean">
         <footer>

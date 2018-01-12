@@ -77,6 +77,9 @@ $(document).ready(function() {
             $('#modal1').modal('hide');
 
 
+
+
+
         }).catch(function(error) {
             console.log("there is an error");
 
@@ -144,7 +147,7 @@ $(document).ready(function() {
 
     // logout button
 
-    $("#btnLogout").on('click', e => {
+    $(".btnLogout").on('click', e => {
         firebase.auth().signOut();
     });
 
@@ -631,6 +634,9 @@ $(document).ready(function() {
 
         if (firebaseUser) {
             console.log(firebaseUser);
+
+            $('.logButton').html("Logout");
+            $('.logButton').addClass("btnLogout");
 
 
             // starts here

@@ -135,7 +135,7 @@ header.masthead .intro-text {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: lightgrey;
+    background-color: rgb(238, 244, 247);
 }
 
 #uploader {
@@ -315,7 +315,7 @@ h3 {
 
 .modal-content {
     padding: 20px;
-    background-color: rgba(30, 155, 201, .9);
+    background-color: rgb(41, 41, 41);
     height:
 }
 
@@ -463,6 +463,7 @@ p {
 }
 
 
+
 .positionsBanner {
 
     background-color: #e8f4f9;
@@ -509,7 +510,7 @@ p {
 .disclaimer {
     padding: 10px;
     border: 1px solid black;
-    background-color: lightgrey;
+    background-color: rgb(238, 244, 247);
 }
 
 .disclaimer>p {
