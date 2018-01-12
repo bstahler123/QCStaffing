@@ -46,7 +46,6 @@
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-   
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -65,10 +64,27 @@
     color: black;
 
 }
+.navbar-fixed-top.scrolled .navbar-brand {
+    color: black;
+
+}
 
 .navbar-fixed-top.scrolled .nav-link:hover {
     background-color: rgb(30, 155, 201);
     color: white;
+}
+
+.navbar-fixed-top.scrolled #printApps:hover {
+    background-color: transparent;
+
+}
+
+.navbar-fixed-top #printApps:hover {
+    background-color: transparent;
+}
+
+.navbar-fixed-top #printApps {
+    margin-right: 5px;
 }
 
 
@@ -535,7 +551,7 @@ p {
 
        .navbar-default .navbar-nav>li>a {
         height: 50px;
-        padding-top: 12px;
+        padding-top: 15px;
     }
    
 }
