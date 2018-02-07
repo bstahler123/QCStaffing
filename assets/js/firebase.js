@@ -53,7 +53,7 @@ $(document).ready(function() {
     const txtEmail = $('#txtEmail');
     const txtPassword = $('#txtPassword');
     const btnLogin = $('.btnLogin');
-    const btnLogout = $('#btnLogout');
+    const btnLogout = $('.btnLogout');
     var newKey;
     var newArray = [];
     var new1 = 0;
@@ -624,9 +624,10 @@ $(document).ready(function() {
     });
 
 
+$(".btnLogin").show();
 
-
-
+ $(".btnLogout").hide();
+ $(".logButton").html("login");
 
     // add listner for users true/false 
 
@@ -634,10 +635,13 @@ $(document).ready(function() {
 
         if (firebaseUser) {
             console.log(firebaseUser);
+         
+         $(".btnLogout").show();
+         $(".btnLogin").hide();
+         $(".logButton").html("logout");
 
-            $('.logButton').html("Logout");
-            $('.logButton').addClass("btnLogout");
-
+            
+            
 
             // starts here
             var ref2 = database.ref('applicant');
