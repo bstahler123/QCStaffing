@@ -12,33 +12,30 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    
     <link rel="stylesheet" href="assets/css/ebs-contact-form.css">
     <link rel="stylesheet" href="assets/css/features-with-waves-effect.css">
     <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    
-    
     <link rel="stylesheet" href="assets/css/styles.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arsenal">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arsenal">
 </head>
 
 <body>
-     <nav  class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand" href="index.html"><span style="text-decoration: underline; color: rgb(30, 155, 201);font-size: 28px; ">Q</span>uality Controlled Staffing</a>
+            <div class="navbar-header"><a id='brand' class="navbar-brand" href="index.html"><img id="nav-pic" src="assets/img/QCS logo.jpg"></a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="printUsers" role="presentation"><a  id="printApps" href="printapps.html"></a></li>
+                    <li class="printUsers" role="presentation"><a id="printApps" href="printapps.html"></a></li>
                     <li role="presentation"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="addPosition" role="presentation"><a  href="admin.html" class="nav-link">Add/Remove</a></li>
+                    <li class="addPosition" role="presentation"><a href="admin.html" class="nav-link">Add/Remove</a></li>
                     <li class="try" role="presentation"><a href="positions.html" class="nav-link">Positions</a></li>
                     <li role="presentation"><a href="clients.html" class="nav-link">Clients </a></li>
                     <li class="" role="presentation" data-toggle="modal" data-target="#modal1"><a href="#" data-toggle='modal' data-target='#modal' class="nav-link logButton">Login</a></li>
@@ -46,42 +43,42 @@
             </div>
         </div>
     </nav>
- 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row mapSpace">
-            <div class="col-md-12 thumbnail text-center maps">
+            <div class="col-md-6 text-center maps">
                 <h2>Our Bettendorf Location</h2>
                 <p>2525 E. Kimberly Road Suite 4
                     <br>Bettendorf, Iowa
                     <br> 52722</p>
-                <iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBeHAWtV1ZLi7c-hsFmGEntPKrE0TDMU0Q&amp;q=2525 E. Kimberly Road Suite 4
+            </div>
+            <div class="col-md-6">
+                <iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBeHAWtV1ZLi7c-hsFmGEntPKrE0TDMU0Q&amp;q=2525 Kimberly Rd.
                 Bettendorf,Iowa 52722&amp;zoom=14" style="height:281px; "></iframe>
-                <a href="https://www.google.com/maps/place/2525+Kimberly+Rd,+Bettendorf,+IA+52722/@41.5489588,-90.5240863,17z/data=!3m1!4b1!4m5!3m4!1s0x87e2369cbdce465d:0xd2d26d8e506f27fc!8m2!3d41.5489588!4d-90.5218923">
-                    <button class="btn btn-info directionsBtn"> Get directions</button>
+                <a href="https://www.google.com/maps/place/2525+ e+Kimberly+Rd,+Bettendorf,+IA+52722/@41.5489588,-90.5240863,17z/data=!3m1!4b1!4m5!3m4!1s0x87e2369cbdce465d:0xd2d26d8e506f27fc!8m2!3d41.5489588!4d-90.5218923">
+                    <button class="btn btn-primary directionsBtn"> Get directions</button>
                 </a>
             </div>
-            
         </div>
     </div>
     <!--  Modal -->
-       <!-- Modal --> 
-     <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                        <p class="text-center"><i class="ion-ios-locked-outline"></i></p>
-                    </div>
-                    <form>
-                        <div class="modal-body">
-                            <input type="email" required="" placeholder="Email" id="txtEmail" style="">
-                            <input type="password" placeholder="Password" id="txtPassword" ">
+    <!-- Modal -->
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <p class="text-center"><i class="ion-ios-locked-outline"></i></p>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <input type="email" required="" placeholder="Email" id="txtEmail" style="">
+                        <input type="password" placeholder="Password" id="txtPassword" ">
                     </div>
                         </form>
                     <div class="modal-bottom text-center ">
                        <!--  <button class="btn btn-default " type="button " data-dismiss="modal ">Close</button> -->
-                        <button id="log" class="btn btn-info btnLogin " type="button">Login </button>
-                         <button id="log" class="btn btn-danger btnLogout " type="button">Logout </button>
+                        <button id="log " class="btn btn-primary btnLogin " type="button ">Login </button>
+                         <button id="log " class="btn btn-danger btnLogout " type="button ">Logout </button>
                         
                         <p class="pwdIncorrect ">Incorrect Username/Password</p>
                         
@@ -90,14 +87,14 @@
             </div>
         </div>
         
-    <div class="row  noMargin">
-        <div class="col-md-12 positionsBanner">
+    <div class="row noMargin ">
+        <div class="col-md-12 positionsBanner ">
             <h4 class="text-center "> Now Hiring for the positions below</h4>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row avalibleJobs">
+    <div class="container-fluid ">
+        <div class="row avalibleJobs ">
 
         </div>
         
@@ -105,6 +102,7 @@
         
 
     </div>
+
     <div class="footer-clean ">
         <footer>
             <div class="container ">

@@ -7,14 +7,14 @@ $(document).ready(function() {
     });
 
     // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyBIbcdYdVCPRVE4d1vTOl4IBKIrghLtKCg",
-        authDomain: "my-website-c5c41.firebaseapp.com",
-        databaseURL: "https://my-website-c5c41.firebaseio.com",
-        projectId: "my-website-c5c41",
-        storageBucket: "gs://my-website-c5c41.appspot.com",
-        messagingSenderId: "974593829471"
-    };
+   var config = {
+    apiKey: "AIzaSyDYcUXwmDUZKKEZumer6ySVjnM-2OQCKz0",
+    authDomain: "qcstaffing-website.firebaseapp.com",
+    databaseURL: "https://qcstaffing-website.firebaseio.com",
+    projectId: "qcstaffing-website",
+    storageBucket: "gs://qcstaffing-website.appspot.com",
+    messagingSenderId: "54435779219"
+  };
 
     firebase.initializeApp(config);
     database = firebase.database();
@@ -231,7 +231,7 @@ $(document).ready(function() {
                 "</div>" +
                 "</div>" +
                 "<div class='text-center'>" +
-                "<a <button href='application.html' class='btn btn-info apply'>Apply Now</button>" +
+                "<a <button href='application.html' class='btn btn-primary apply'>Apply Now</button>" +
                 "</div></a>" +
                 "</div>"
             );
@@ -256,7 +256,7 @@ $(document).ready(function() {
 
     $(".appDiv").on('click', '.printApp', function() {
 
-        console.log("hello");
+        
 
 
     });
@@ -751,12 +751,12 @@ $(".btnLogin").show();
                     }
 
 
-                    console.log(person[k].feild1);
+                    
 
 
 
                     newKey = keys[i];
-                    console.log(newKey);
+                   
 
 
 
@@ -852,7 +852,7 @@ $(".btnLogin").show();
                         "<br>" + clients.four + "<br>" + clients.five +
 
                         "</p>" +
-                        "<button class='btn btn-info printClient' value=" + newKey + ">" + "Print" + "</button>" +
+                        "<button class='btn btn-primary printClient' value=" + newKey + ">" + "Print" + "</button>" +
 
                         "<button class='btn btn-danger deleteClients' value=" + newKey + ">" + "Delete" + "</button>" +
 
@@ -868,21 +868,22 @@ $(".btnLogin").show();
 
                 }
 
-                $("#printApps").html("");
-                 $("#printApps").append( + new1 + new2 + 1);
-                console.log(new1 + new2);
 
 
 
 
             };
 
+             $("#printApps").html("");
+                 $("#printApps").append( + new1 + new2 + 1);
+                
+
             //Printing client messages
 
             $(".printClients").on('click', '.printClient', function() {
                 appId = $(this).val()
 
-                console.log($(this).val());
+                
 
                 function PrintElem(elem) {
                     var mywindow = window.open('', 'PRINT', 'height=400,width=600');
@@ -928,7 +929,7 @@ $(".btnLogin").show();
             $(".printApps").on('click', '.printApp', function() {
                 appId = $(this).val()
 
-                console.log($(this).val());
+                
 
                 function PrintElem(elem) {
                     var mywindow = window.open('', 'PRINT', 'height=400,width=600');

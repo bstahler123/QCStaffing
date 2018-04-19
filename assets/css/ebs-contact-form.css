@@ -6,7 +6,7 @@ div#contact-box {
   max-height:100%;
 }
 .text-info {
-  color : #00aeef;
+  color : rgb(43, 85, 254);
 }
 
 p#contact-text {
@@ -21,7 +21,7 @@ div.info-box {
 
 .my-info-icons {
   margin-right:15px;
-  color: #00aeef;
+  color: rgb(43, 85, 254);
 }
 
 div#info-container {
@@ -35,7 +35,7 @@ i.form-control-feedback {
 
 i.form-control-feedback {
   padding-top:10px;
-  color:#00aeef;
+  color:rgb(43, 85, 254);
 }
 
 div.site-form {

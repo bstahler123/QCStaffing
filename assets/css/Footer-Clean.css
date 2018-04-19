@@ -34,6 +34,7 @@
   text-align:right;
 }
 
+
 @media (max-width:767px) {
   .footer-clean .item {
     text-align:center;
@@ -60,6 +61,7 @@
   margin-top:22px;
   color:inherit;
   opacity:0.75;
+
 }
 
 .footer-clean .item.social > a:hover {
@@ -85,4 +87,5 @@
   opacity:0.6;
   color: white;
 }
+
 
